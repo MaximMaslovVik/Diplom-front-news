@@ -1,0 +1,16 @@
+@import url('./card/card.css');
+
+.group__cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.group__cards_margin {
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.cards_margin {
+    margin-right: 16px;
+}

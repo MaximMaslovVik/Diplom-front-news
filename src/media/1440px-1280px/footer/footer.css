@@ -1,0 +1,24 @@
+@media screen and (max-width: 1439px) and (min-width: 1280px) {
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .footer__info {
+        width: 300px;
+        margin: 24px 0 18px 40px;
+    }
+
+    .footer__column-text_header {
+        width: 88px;
+    }
+
+    .footer__column-text_link {
+        width: 176px;
+    }
+
+    .footer__column-icone {
+        margin-left: 25.89px;
+    }
+}

@@ -1,0 +1,38 @@
+@media screen and (max-width: 539px) and (min-width: 375px) {
+
+    .footer {
+        position: relative;
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .footer__column {
+        margin: 21px 104px 0px 16px;
+        flex-direction: column;
+    }
+
+    .footer__column-icone {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer__column-icone_github {
+        top: 22px;
+        right: 66px;
+    }
+
+    .footer__column-icone_facebook {
+        top: 22px;
+        right: 18px
+    }
+
+    .footer__info {
+        width: 288px;
+        margin: 20px 0 20px 16px;
+    }
+
+    .footer__column-text_header {
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,11 @@
+.card__paragraph {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1A1B22;
+    width: 352px;
+    margin: 0 24px 16px;
+    height: 110px;
+}

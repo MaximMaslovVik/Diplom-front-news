@@ -1,0 +1,10 @@
+@import url('./main-header/main-header.css');
+@import url('./link/link.css');
+
+.menu__main {
+    margin: 30px 32px 0 0;
+}
+
+.menu__main_blackTeame {
+    color: #1A1B22;
+}

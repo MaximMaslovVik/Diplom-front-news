@@ -1,0 +1,6 @@
+@import url('./__author/about__author.css');
+@import url('./__paragraph/about__paragraph.css');
+
+.about__text {
+    width: 600px;
+}   

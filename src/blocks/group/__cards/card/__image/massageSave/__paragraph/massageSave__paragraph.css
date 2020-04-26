@@ -1,0 +1,16 @@
+.massageSave__paragraph, .massageAnswer__paragraph {
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 10px;
+    line-height: 12px;
+    color: #000000;
+    border-radius: 10px;
+    margin: 15px 0 15px;
+    font-weight: 600;
+    width: 182px;
+    text-align: center;
+}
+
+.massageAnswer__paragraph {
+    width: 88px;
+}

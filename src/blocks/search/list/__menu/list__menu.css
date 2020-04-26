@@ -1,0 +1,7 @@
+.list__menu {
+  position: relative;
+  padding-left: 0px;
+  width: 320px;
+  background: #1A1B22;
+  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
+}

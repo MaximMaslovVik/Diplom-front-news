@@ -1,0 +1,9 @@
+@import url('./__main/menu__main.css');
+@import url('./__signin/menu__signin.css');
+
+.menu__authorization {
+    display: flex;
+    flex-direction: row;
+    margin: 0 104px 0 755px;
+    display: none;
+}

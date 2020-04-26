@@ -1,0 +1,30 @@
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+
+    .about {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .about__image {
+        width: 30.2%;
+        margin: 61px 32px 61px 0;
+    }
+
+    .about__text {
+        width: 424px;
+        margin: 0;
+
+    }
+
+    .about__author {
+        margin-top: 40px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .about__title-one {
+        margin-top: 16px;
+    }
+}

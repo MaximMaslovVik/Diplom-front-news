@@ -1,0 +1,9 @@
+@media screen and (max-width: 374px) and (min-width: 320px) {
+    .not-found__header {
+        width: 94%;
+    }
+
+    .not-found__paragraph {
+        width: 94%;
+    }
+}

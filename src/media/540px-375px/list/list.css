@@ -1,0 +1,26 @@
+@media screen and (max-width: 539px) and (min-width: 375px) {
+    .list__image {
+        display: flex;
+        justify-content: flex-end;
+        width: 28px;
+        margin-right: 30px;
+    }
+
+    .menu__close_list {
+        padding: 10px;
+        display: flex;
+        justify-content: flex-end;
+        width: 28px;
+        margin: 30px 18px 0 auto;
+    }
+
+    .search__header-signin {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .button_registration {
+        display: flex;
+        margin: 0 auto 60px;
+    }
+}
