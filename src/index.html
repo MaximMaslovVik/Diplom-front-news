@@ -7,9 +7,8 @@
   <meta name="description" content="Мои новости - дипломная работа "/>
   <meta name="author" content="Maslov Maxim"/>
   <link rel="icon" href="../src/images/favicon.png" type="image/x-icon"/>
-  <link rel="shortcut icon" href="../src/images/favicon.png" type="image/x-icon"/>
+  <link rel="shortcut icon" href="<%=require('../src/images/favicon.png')%>" type="image/x-icon"/>
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
-  <link rel="stylesheet" href="index.css">
   <title>Мои новости - главная</title>
 </head>
 <body>
@@ -58,11 +57,10 @@
     </header>
     <section class="about">
       <picture  >
-        <source class="author__image" srcset="./images/image-2.png" media="(max-width:320px)">
-        <source class="author__image" srcset="./images/image-1.png" media="(max-width: 768px)">
-        <img class="about__image" src="./images/image-03.png" alt="image-author">
+        <source class="author__image" srcset="<%=require('./images/image-2.png')%>" media="(max-width:320px)">
+        <source class="author__image" srcset="<%=require('./images/image-1.png')%>" media="(max-width: 768px)">
+        <img class="about__image" src="<%=require('./images/image-03.png')%>" alt="image-author">
       </picture>
-
     <div class="about__text">
       <h3 class="about__author">Об авторе</h3>
       <div class="about__paragraph">
@@ -80,7 +78,7 @@
             <p class="massageSave__paragraph">Войдите, чтобы сохранять статьи</p>
           </div>
           <button class="buttomSave">
-            <img class="buttomSave__icon" src="./blocks/group/__cards/card/__image/images/Rectangle1.png" alt="imageCard">
+            <img class="buttomSave__icon" src="<%=require('./blocks/group/__cards/card/__image/images/Rectangle1.png')%>" alt="imageCard">
           </button>
         </div>
         <p class="card__data">2 августа, 2019</p>
@@ -96,7 +94,7 @@
             <p class="massageSave__paragraph">Войдите, чтобы сохранять статьи</p>
           </div>
           <button class="buttomSave">
-            <img class="buttomSave__icon" src="./blocks/group/__cards/card/__image/images/Rectangle1.png" alt="imageCard">
+            <img class="buttomSave__icon" src="<%=require('./blocks/group/__cards/card/__image/images/Rectangle1.png')%>" alt="imageCard">
           </button>
         </div>
         <p class="card__data">2 августа, 2019</p>
@@ -112,7 +110,7 @@
             <p class="massageSave__paragraph">Войдите, чтобы сохранять статьи</p>
           </div>
           <button class="buttomSave">
-            <img class="buttomSave__icon buttomSave__icon_saved" src="./blocks/group/__cards/card/__image/images/Rectangle2.png" alt="imageCard">
+            <img class="buttomSave__icon buttomSave__icon_saved" src="<%=require('./blocks/group/__cards/card/__image/images/Rectangle1.png')%>" alt="imageCard">
           </button>
         </div>
         <p class="card__data">2 августа, 2019</p>
@@ -130,7 +128,7 @@
     <p class="preloader__news">Идет поиск новостей...</p>
   </section>
   <section class="not-found">
-    <img class="not-found__image" src="./blocks/not-found/images/not-found_v1.png" alt="notFoundImage">
+    <img class="not-found__image" src="<%=require('./blocks/not-found/images/not-found_v1.png')%>" alt="notFoundImage">
     <h4 class="not-found__header">Ничего не найдено</h4>
     <p class="not-found__paragraph">К сожалению по вашему запросу ничего не найдено.</p>
   </section>
@@ -140,10 +138,10 @@
       <a href="./index.html" class="footer__column-text footer__column-text_header" >Главная</a>
       <a href="https://praktikum.yandex.ru" class="footer__column-text footer__column-text_link"  target="_blank">Яндекс.Практикум</a>
       <a href="https://github.com/MaximMaslovVik" class="footer__column-icone footer__column-icone_github" target="_blank">
-        <img src="./images/git-icon.svg" class="footer__social-icon" alt="GitHub">
+        <img src="<%=require('./images/git-icon.svg')%>" class="footer__social-icon" alt="GitHub">
       </a>
       <a href="https://www.facebook.com/DMax319" class="footer__column-icone footer__column-icone_facebook" target="_blank">
-        <img src="./images/fb-icon.svg" class="footer__social-icon" alt="Facebook">
+        <img src="<%=require('./images/fb-icon.svg')%>" class="footer__social-icon" alt="Facebook">
       </a>
     </div>
   </footer>

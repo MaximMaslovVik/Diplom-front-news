@@ -10,4 +10,5 @@ if (textHeight < 100) {
     textCard.textContent = str + "...";
 }
 
-import "./index.css"
+import "./index.css";
+import "./seconary.css";
