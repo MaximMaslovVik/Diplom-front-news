@@ -13,6 +13,10 @@
 
 body {
   max-width: 1440px;
+<<<<<<< Updated upstream
+=======
+  width: 100%;
+>>>>>>> Stashed changes
   min-width: 320px;
   margin: 0 auto;
 }
