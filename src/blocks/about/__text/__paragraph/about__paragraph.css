@@ -1,0 +1,17 @@
+@import url('./__title-one/about__title-one.css');
+@import url('./__title-two/about__title-two.css');
+
+.about__paragraph {
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 24px;
+font-weight: 900;
+/* or 133% */
+
+
+/* Path 5 */
+
+color: #1A1B22;
+}

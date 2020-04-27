@@ -1,0 +1,10 @@
+@import url('./-text/footer__column-text.css');
+@import url('./-links/footer__column-link.css');
+@import url('./-icone/footer__column-icone.css');
+
+.footer__column {
+  display: flex;
+  margin: 30px 106px 0 383px;
+  flex-direction: row;
+  
+}
