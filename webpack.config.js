@@ -56,12 +56,15 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             inject: false,
-            template: './src/saved-news.html',
-            filename: 'saved-news.html'
+            template: './src/secondary.html',
+            filename: 'secondary.html'
         }),
         new MiniCssExtractPlugin({
             filename: 'style.[contenthash].css'
         }),
+        new MiniCssExtractPlugin({
+          filename: 'secondary.[contenthash].css'
+      }),
         new OptimizeCssAssetsPlugin({
             assetNameRegExp: /\.css$/g,
             cssProcessor: require('cssnano'),
