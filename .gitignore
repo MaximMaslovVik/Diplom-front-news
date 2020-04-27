@@ -1,3 +1,7 @@
 /node_modules
 /dist
+<<<<<<< HEAD
 .DS_Store
+=======
+.DS_Store
+>>>>>>> origin/level-2
