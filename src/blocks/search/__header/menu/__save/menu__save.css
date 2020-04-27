@@ -1,0 +1,21 @@
+@import url('./saved/saved.css');
+
+.menu__save {
+    display: flex;
+    flex-direction: row;
+    margin: 0 104px 0 579px;
+}
+
+.menu__save_blackTeame {
+    margin: 0 104px 0 575px;
+    display: flex;
+}
+
+.main-header_black {
+    color: #1A1B22;
+    margin-top: 25px;
+}
+
+.main__save-menu {
+    margin: 25px 16px 0;
+}

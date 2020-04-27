@@ -1,0 +1,40 @@
+.menu__signin {
+    background-color: transparent;
+    margin-top: 19px;
+    margin-bottom: 13px;
+    width: 176px;
+    box-sizing: border-box;
+    border-radius: 100px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
+
+.menu-signin__save, .text-weight {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1A1B22;
+}
+
+.text-weight {
+    font-weight: 900;
+}
+
+.menu__signin_blackTeame {
+    color: #1A1B22;
+    border: 1px solid #1A1B22;
+    font-weight: 600;
+    
+}
+
+.menu__signin_black {
+    border: 1px solid #1A1B22;
+    color: #1A1B22;
+}

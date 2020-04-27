@@ -1,0 +1,8 @@
+@import url('./__authorization/menu__authorization.css');
+@import url('./__save/menu__save.css');
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}

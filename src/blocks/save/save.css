@@ -1,0 +1,7 @@
+@import url('./__paragraph/__paragraph.css');
+@import url('./__header/save__header.css');
+
+.save {
+  max-width: 1440px;
+  margin: 40px 624px 0 104px;
+}

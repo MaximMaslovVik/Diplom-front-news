@@ -1,0 +1,11 @@
+@import url('./__botton/topic__botton.css');
+@import url('./__news/topic__news.css');
+
+.search__topic {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 100px;
+}

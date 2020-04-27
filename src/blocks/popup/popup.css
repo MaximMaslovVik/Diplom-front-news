@@ -1,0 +1,44 @@
+@import url(./__content/popup__content.css);
+@import url(./__close/popup__close.css);
+@import url(./__title/popup__title.css);
+@import url(./__form/popup__form.css);
+@import url(./__input/popup__input.css);
+@import url(./__button/popup__button.css);
+@import url(./_is-opened/popup_is-opened.css);
+@import url(./__button/popup__button_active.css);
+
+.popup,.popup-registration, .popup-signup {
+  position: fixed;
+  width: 430px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup {
+  display: none;
+  height: 100%;
+}
+
+.popup-registration {
+  display: none;
+  height: 100%;
+}
+
+.popup-signup {
+  display: none;
+  height: 100%;
+}
+
+.news_popup {
+  margin: 0;
+}
+
+.popup__block {
+  display: flex;
+  flex-direction: row;
+}
