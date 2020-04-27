@@ -34,6 +34,7 @@ module.exports = {
         filename: '[name].[chunkhash].js'
     },
 
+
     module: {
         rules: [{
                 test: /\.js$/,
@@ -79,6 +80,11 @@ module.exports = {
         new MiniCssExtractPlugin({
             filename: 'index.[contenthash].css'
         }),
+        /*
+        new MiniCssExtractPlugin({
+          filename: 'seconadary.[contenthash].css'
+      }),
+*/
 
         new OptimizeCssAssetsPlugin({
             assetNameRegExp: /\.css$/g,
