@@ -1,0 +1,36 @@
+@media screen and (max-width: 539px) and (min-width: 375px) {
+    .menu {
+        display: none;
+    }
+
+    .search__header-signin {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin: 28px 0 0;
+    }
+
+    .list {
+        width: 40px;
+        list-style-type: none;
+        margin-right: 60px;
+    }
+
+    .list__image {
+        width: 33px;
+        margin: 0;
+        background-repeat: no-repeat;
+    }
+
+    .news {
+        margin-left: 50px;
+    }
+
+    .menu__save{
+        margin-right: 5%;
+    }    
+
+    .news_blackTeame {
+        margin-left: 40px;
+    }
+}

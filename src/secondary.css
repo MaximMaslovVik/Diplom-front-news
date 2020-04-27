@@ -1,0 +1,18 @@
+@import url('./vendor/normalize.css');
+@import url('./vendor/fonts.css');
+@import url('./blocks/search/search.css');
+@import url('./blocks/about/about.css');
+@import url('./blocks/footer/footer.css');
+@import url('./blocks/preloader/preloader.css');
+@import url('./blocks/not-found/not-found.css');
+@import url('./blocks/group/group.css');
+@import url('./blocks/popup/popup.css');
+@import url('./blocks/save/save.css');
+@import url('./media/media.css');
+
+
+body {
+  width: 100%;
+  min-width: 320px;
+  margin: 0;
+}

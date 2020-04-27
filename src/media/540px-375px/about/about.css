@@ -1,0 +1,41 @@
+@media screen and (max-width: 540px) and (min-width: 375px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 60px 5% 20px;
+    }
+
+    .about__image {
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    .about__text {
+        width: 100%;
+        margin: 0;
+
+    }
+
+    .about__author {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        font-size: 30px;
+        line-height: 40px;
+        width: 320px;
+    }
+
+    .about__title-one, .about__title-two  {
+        margin-top: 16px;
+        width: 100%;
+        margin: 0px
+    }
+
+    .about__paragraph {
+        width: 100%;
+    }
+
+    .footer__column-text {
+        text-align: start;
+    }
+}

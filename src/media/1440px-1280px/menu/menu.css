@@ -1,0 +1,21 @@
+@media screen and (max-width: 1439px) and (min-width: 1280px) {
+    .menu {
+        width: 100%;
+    }
+
+    .menu__save {
+        margin: 0 7.2% 0 50%;
+    }
+
+    .news {
+        margin-left: 7.2%;
+    }
+
+    .menu__authorization {
+        margin: 0 10% 0 65%;
+    }
+
+    .menu__save_blackTeame {
+        margin: 0 7.2% 0 49%;
+    }
+}

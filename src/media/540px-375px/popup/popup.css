@@ -1,0 +1,52 @@
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+
+    .popup, .popup-registration {
+        width: 100%;
+        top: 56px;
+        align-items: normal;
+        height: 100%;
+    }
+
+    .popup__content {
+        width: 100%;
+        padding: 16px;
+        overflow-y: auto;
+    }
+
+    .button_registration {
+        display: flex;
+        margin: 0 auto 190px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .popup__close {
+        display: none;
+        overflow-y: hidden;
+    }
+    
+    .popup__block {
+        display: flex;
+        flex-direction: row;
+        background-image: url(../../../blocks/search/images/georgia-de-lotz--UsJoNxLaNo-unsplash.png);
+    }
+
+    .popup {
+        display: flex;
+        flex-direction: column;
+        top: 0px;
+    }
+
+    .news_popup {
+        color: #fff;
+    }
+
+    .popup__close {
+        display: flex;
+        top: 15px;
+        right: 22px;
+    }
+
+    
+    
+}

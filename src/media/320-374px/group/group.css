@@ -1,0 +1,86 @@
+@media screen and (max-width: 374px) and (min-width: 320px) {
+    
+    .group {
+        padding: 32px 5% 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .group__cards {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 288px;
+        position: static;
+        height: auto;
+        margin-bottom: 26px;
+    }
+
+    .group__result {
+        width: 288px;
+        font-size: 30px;
+        line-height: 34px;
+        margin-bottom: 24px;
+    }
+
+    .buttomSave {
+        margin: 8px 8px 140px;
+    }
+
+    .massageSave {
+        margin: 8px 0 140px;
+    }
+    .card__header {
+        width: 256px;
+        margin: 8px 16px;
+    }
+
+    .card__data {
+        margin: 10px 16px 0;
+    }
+
+    .card__paragraph {
+        overflow: hidden;
+        width: 256px;
+        margin: 10px 16px;
+        height: auto;
+    }
+
+    .card__source {
+       position: static;
+       width: 256px;
+       margin: 8px 16px;
+    }
+
+    .button-cards {
+        margin: 15px auto 32px;
+    }
+
+    .save {
+        margin: 8px 16px 32px 16px;
+    }
+
+    .save__paragraph {
+        width: 100%;
+    }
+
+    .save__header {
+        width: 100%;
+        font-size: 30px;
+        line-height: 34px;
+    }
+
+    .menu-signin__save_black-paragraph {
+        width: 100%;
+    }
+
+    .buttomDelete {
+        margin: 16px 16px 140px 0;
+    }
+
+    .massageAnswer {
+        margin: 16px 128px 140px 16px;
+    }
+}

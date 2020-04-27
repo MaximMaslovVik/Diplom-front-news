@@ -1,0 +1,9 @@
+@media screen and (max-width: 1279px) and (min-width: 1024px) {
+    .search__body {
+        padding: 40px 28.89%
+    }
+
+    .topic__news {
+        width: 59%;
+    }
+}

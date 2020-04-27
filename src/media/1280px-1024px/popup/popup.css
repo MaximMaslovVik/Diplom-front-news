@@ -1,0 +1,6 @@
+@media screen and (max-width: 1279px) and (min-width: 1024px) {
+
+    .popup__block {
+        display: none;
+    }
+}
