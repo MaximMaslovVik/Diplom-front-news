@@ -40,7 +40,7 @@
                     <button class="menu__close menu__close_list"></button>
                   </li>
                   <li><a class="li__margin" href="./index.html">Главная</a></li>
-                  <li><a class="li__margin" href="saved-news.html">Сохранённые статьи</a></li>
+                  <li><a class="li__margin" href="./secondary.html">Сохранённые статьи</a></li>
                   <li class="menu__margin"><button class="menu__authorization menu__authorization_black-margin">Грета [→</button></li>
                 </ul>
               </div>
@@ -56,9 +56,9 @@
         </div>
     </header>
     <section class="about">
-      <picture  >
-        <source class="author__image" srcset="<%=require('./images/image-2.png')%>" media="(max-width:320px)">
-        <source class="author__image" srcset="<%=require('./images/image-1.png')%>" media="(max-width: 768px)">
+      <picture class="about__image">
+        <source class="author__image" srcset="<%=require('./images/image-1.png')%>" media="(max-width:320px)">
+        <source class="author__image" srcset="<%=require('./images/image-2.png')%>" media="(max-width: 768px)">
         <img class="about__image" src="<%=require('./images/image-03.png')%>" alt="image-author">
       </picture>
     <div class="about__text">
@@ -123,10 +123,10 @@
     </div>
     <button class="button-cards">Показать ещё</button>
   </div>
-  <section class="preloader">
+  <div class="preloader">
     <div class="circle-preloader circle-preloader_margin"></div>
     <p class="preloader__news">Идет поиск новостей...</p>
-  </section>
+  </div>
   <section class="not-found">
     <img class="not-found__image" src="<%=require('./blocks/not-found/images/not-found_v1.png')%>" alt="notFoundImage">
     <h4 class="not-found__header">Ничего не найдено</h4>
