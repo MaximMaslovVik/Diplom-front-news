@@ -11,4 +11,4 @@ if (textHeight < 100) {
 }
 
 import "./index.css";
-import "./seconary.css";
+import "./secondary.css";
