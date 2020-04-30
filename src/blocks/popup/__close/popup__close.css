@@ -1,9 +1,32 @@
-.popup__close {
-  width: 26px;
-  height: 26px;
-  position: absolute;
-  top: -26px;
-  right: -26px;
-  cursor: pointer;
-  z-index: 2;
+@media (max-width: 767px) {
+  .popup__close {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: -40px;
+    right: 16px;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 768px) {
+  .popup__close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -46px;
+    right: -46px;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 1440px) {
+  .popup__close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -46px;
+    right: -46px;
+    cursor: pointer;
+  }
 }

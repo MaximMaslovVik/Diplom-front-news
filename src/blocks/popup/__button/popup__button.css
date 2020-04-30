@@ -1,21 +1,45 @@
-@import url(../__button/popup__button_active.css);
-@import url(../__button/_registration/button_registration.css);
-@import url(../__button/_signup/button_signup.css);
+@media (max-width: 768px) {
+  .popup__button {
+    width: 288px;
+    height: 64px;
+    margin-top: 23px;
+    margin-left: 16px;
+    margin-right: 16px;
 
-.popup__button {
-  background: #E6E8EB;
-  border-radius: 100px;
-  width: 100%;
-  height: 50px;
-  margin-top: 16px;
-  margin-bottom: 16px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 24px;
-  align-items: center;
-  text-align: center;
-  color: #B6BCBF;
-  border: 0;
+    background: #e6e8eb;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: #b6bcbf;
+    }
+  }
+
+@media (min-width: 768px) {
+  .popup__button {
+    width: 358px;
+    height: 64px;
+    margin-top: 39px;
+    margin-left: 36px;
+    margin-right: 36px;
+
+    background: #e6e8eb;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: #B6BCBF;
+  }
 }

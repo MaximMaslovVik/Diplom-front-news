@@ -1,0 +1,25 @@
+@media (max-width: 767px) {
+  .results__container {
+    display: flex;
+    flex-direction: column;
+    width: 288px;
+    margin-top: 24px;
+    margin-left: 16px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .results__container {
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .results__container {
+    display: flex;
+    justify-content: center;
+    margin-top: 64px;
+  }
+}

@@ -1,0 +1,21 @@
+@media (max-width: 767px) {
+  .results__author_medusa {
+    margin-top: 8px;
+    margin-bottom: 17px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .results__author_medusa {
+    margin-top: 82px;
+    margin-bottom: 16px;
+  }
+
+}
+
+@media (min-width: 1024px) {
+  .results__author_medusa {
+    margin-top: 100px;
+    margin-bottom: 24px;
+  }
+}

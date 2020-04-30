@@ -1,3 +1,11 @@
-.popup.popup_is-opened {
-  display: flex;
+@media (max-width: 767px) {
+  .popup_is-opened {
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) {
+  .popup_is-opened {
+    display: flex;
+  }
 }

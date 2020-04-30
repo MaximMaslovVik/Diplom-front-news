@@ -1,0 +1,32 @@
+
+@media (max-width: 767px) {
+  .popup__error {
+    margin-top: 3px;
+    margin-left: 16px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    /* visibility: hidden; */
+
+    color: #ff0000;
+  }
+}
+
+@media (min-width: 768px) {
+  .popup__error {
+    margin-top: 3px;
+    margin-left: 36px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    /* visibility: hidden; */
+
+    color: #ff0000;
+  }
+}

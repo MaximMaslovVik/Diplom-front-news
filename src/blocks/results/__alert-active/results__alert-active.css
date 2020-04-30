@@ -1,0 +1,35 @@
+@media (max-width: 767px) {
+  .results__alert-active {
+    display: none;
+    position: absolute;
+    width: 14px;
+    height: 19px;
+    top: 11px;
+    left: 13px;
+    background-image: url(../../../images/bookmark-blue.png);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .results__alert-active {
+    display: none;
+    position: absolute;
+    width: 14px;
+    height: 19px;
+    top: 11px;
+    left: 13px;
+    background-image: url(../../../images/bookmark-blue.png);
+  }
+}
+
+@media (min-width: 1024px) {
+  .results__alert-active {
+   /* display: none;*/
+    position: absolute;
+    width: 14px;
+    height: 19px;
+    top: 11px;
+    left: 13px;
+    background-image: url(../../../images/bookmark-blue.png);
+  }
+}

@@ -1,0 +1,29 @@
+.root {
+  min-width: 320px;
+  max-width: 1440px;
+  margin: 0px auto;
+  padding: 0px;
+}
+
+@media (max-width: 1024px) {
+  .root {
+    max-width: 1024px;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .root {
+    max-width: 768px;
+    margin: 0px;
+    padding: 0px;
+  }
+}
+
+@media (max-width: 320px) {
+  .root {
+    max-width: 320px;
+    padding: 0px;
+  }
+}
