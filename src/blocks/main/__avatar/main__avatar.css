@@ -1,0 +1,31 @@
+@media (max-width: 767px) {
+  .main__avatar {
+    width: 272px;
+    height: 272px;
+    margin-top: 32px;
+    margin-left: 24px;
+    margin-bottom: 24px;
+    border-radius: 1000px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__avatar {
+    width: 232px;
+    height: 232px;
+    margin-top: 61px;
+    margin-left: 40px;
+    margin-bottom: 61px;
+    border-radius: 1000px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main__avatar {
+    height: 464px;
+    margin-top: 80px;
+    margin-left: 6.5em;
+    margin-bottom: 80px;
+    border-radius: 1000px;
+  }
+}
