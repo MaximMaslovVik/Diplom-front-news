@@ -146,9 +146,9 @@
 
   <main class="main">
     <picture class="about__image">
-      <source class="author__image" srcset="./images/image-1.png"  media="(max-width:320px)">
-      <source class="author__image" srcset="./images/image-2.png" media="(max-width: 768px)">
-      <img class="main__avatar" srcset="./images/avatar-sample.png"  alt="фото автора">
+      <source class="author__image" srcset="<%=require('./images/image-1.png').default%>"  media="(max-width:320px)">
+      <source class="author__image" srcset="<%=require('./images/image-2.png').default%>" media="(max-width: 768px)">
+      <img class="main__avatar" srcset="<%=require('./images/avatar-sample.png').default%>"  alt="фото автора">
     </picture>
 
     <div class="main__container">
@@ -172,10 +172,10 @@
       <a href="./index.html" class="footer__column-text footer__column-text_header" >Главная</a>
       <a href="https://praktikum.yandex.ru" class="footer__column-text footer__column-text_link"  target="_blank">Яндекс.Практикум</a>
       <a href="https://github.com/MaximMaslovVik" class="footer__column-icone footer__column-icone_github" target="_blank">
-        <img src="<%=require('./images/fb-icon.png')%>" class="footer__social-icon" alt="GitHub">
+        <img src="<%=require('./images/github.png').default%>" class="footer__social-icon" alt="GitHub">
       </a>
       <a href="https://www.facebook.com/DMax319" class="footer__column-icone footer__column-icone_facebook" target="_blank">
-        <img src="<%=require('./images/fb-icon.png')%>" class="footer__social-icon" alt="Facebook">
+        <img src="<%=require('./images/fb-icon.png').default%>" class="footer__social-icon" alt="Facebook">
       </a>
     </div>
   </footer>
