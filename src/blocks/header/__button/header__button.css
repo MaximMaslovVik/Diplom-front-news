@@ -1,0 +1,102 @@
+@media (max-width: 767px) {
+  .header__button {
+    width: 288px;
+    height: 56px;
+    margin-top: 16px;
+    margin-bottom: 0;
+
+    font-family: Roboto, arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    cursor: url(../../../images/lapka.png), pointer;
+
+    color: #fff;
+
+    background: #2f71e5;
+    border-radius: 100px;
+    border: none;
+  }
+
+  .header__button:hover {
+    background: #347EFF;
+    border: none;
+  }
+
+  .header__button:active {
+    background: #2A65CC;
+    border: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header__button {
+    width: 15em;
+    height: 56px;
+
+    font-family: Roboto, arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    cursor: url(../../../images/lapka.png), pointer;
+
+    color: #fff;
+
+    background: #2f71e5;
+    border-radius: 100px;
+    border: none;
+  }
+
+  .header__button:hover {
+    background: #347EFF;
+    border: none;
+  }
+
+  .header__button:active {
+    background: #2A65CC;
+    border: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header__button {
+    width: 14em;
+    height: 64px;
+
+    font-family: Roboto, arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    cursor: url(../../../images/lapka.png), pointer;
+
+    color: #fff;
+
+    background: #2f71e5;
+    border-radius: 100px;
+    border: none;
+  }
+
+  .header__button:hover {
+    background: #347EFF;
+    border: none;
+  }
+
+  .header__button:active {
+    background: #2A65CC;
+    border: none;
+  }
+
+  .header__button_hover {
+    background: #347EFF;
+    border: none;
+  }
+
+  .header__button_press {
+    background: #2A65CC;
+    border: none;
+  }
+
+}

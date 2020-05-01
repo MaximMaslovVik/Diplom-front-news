@@ -1,0 +1,23 @@
+@media (max-width: 767px) {
+  .header__container {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    background: #1a1b22;
+    border-radius: 0 0 16px 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header__container {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header__container {
+    display: flex;
+    justify-content: center;
+  }
+}
