@@ -1,9 +1,0 @@
-@media screen and (max-width: 1440px) and (min-width: 540px) {
-    .popup__block {
-        display: none;
-    }
-
-    .popup__close-block_signin, .popup__close-block {
-        display: none;
-    }
-}
