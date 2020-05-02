@@ -1,0 +1,31 @@
+@media (max-width: 767px) {
+  .popup__title-success {
+    margin-top: 16px;
+    margin-left: 17px;
+    margin-bottom: 14px;
+
+    font-family: Roboto, arial, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #000;
+  }
+}
+
+@media (min-width: 768px) {
+  .popup__title-success {
+    margin-top: 43px;
+    margin-left: 36px;
+    margin-bottom: 14px;
+
+    font-family: Roboto, arial, sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #000;
+  }
+}

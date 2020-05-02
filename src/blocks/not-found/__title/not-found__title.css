@@ -1,0 +1,27 @@
+@media (max-width: 767px) {
+  .not-found__title {
+    font-family: Roboto Slab, arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+
+    text-align: center;
+
+    color: #1A1B22;
+  }
+}
+
+@media (min-width: 768px) {
+  .not-found__title {
+    font-family: Roboto Slab, arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+
+    text-align: center;
+
+    color: #1A1B22;
+  }
+}

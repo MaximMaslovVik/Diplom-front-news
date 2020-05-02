@@ -1,0 +1,32 @@
+@media (max-width: 767px) {
+  .header__navigation {
+    display: flex;
+    height: 56px;
+    /* display: none; */
+
+    background: rgba(196, 196, 196, 0.01);
+    box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header__navigation {
+    display: flex;
+    justify-content: space-between;
+    /* display: none; */
+
+    background: rgba(196, 196, 196, 0.01);
+    box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
+  }
+}
+
+  @media (min-width: 1024px) {
+  .header__navigation {
+    display: flex;
+    justify-content: space-between;
+    /* display: none; */
+
+    background: rgba(196, 196, 196, 0.01);
+    box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
+  }
+}

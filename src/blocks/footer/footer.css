@@ -1,0 +1,8 @@
+@import url('./__info/footer__info.css');
+@import url('./__column/footer__column.css');
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}

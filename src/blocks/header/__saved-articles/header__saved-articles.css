@@ -1,0 +1,51 @@
+@media (max-width: 767px) {
+  .header__saved-articles {
+    margin-left: 16px;
+    font-family: Roboto, arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 56px;
+    text-decoration: none;
+    cursor: url(../../../images/lapka.png), pointer;
+    display: none;
+
+    color: #fff;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header__saved-articles {
+    margin-top: 22px;
+    margin-right: 16px;
+    font-family: Roboto, arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    display: none;
+    cursor: url(../../../images/lapka.png), pointer;
+
+    color: #b6bcbf;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header__saved-articles {
+    margin-top: 30px;
+    margin-bottom: 26px;
+    margin-right: 2em;
+
+    font-family: Roboto, arial, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: none;
+   /* display: none;*/
+    cursor: url(../../../images/lapka.png), pointer;
+
+    color: #b6bcbf;
+  }
+}

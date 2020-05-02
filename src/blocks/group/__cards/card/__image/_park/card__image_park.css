@@ -1,0 +1,5 @@
+.card__image_park {
+    background-image: url('../images/park.png');
+    border-left: 16px;
+    border-right: 16px;
+}

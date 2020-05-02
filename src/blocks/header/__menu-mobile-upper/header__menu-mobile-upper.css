@@ -1,0 +1,15 @@
+@media (max-width: 767px) {
+  .header__menu-mobile-upper {
+    display: flex;
+    width: 320px;
+    height: 56px;
+    background: #1a1b22;
+    box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.2);
+  }
+}
+
+@media (min-width: 768px) {
+  .header__menu-mobile-upper {
+    display: none;
+  }
+}

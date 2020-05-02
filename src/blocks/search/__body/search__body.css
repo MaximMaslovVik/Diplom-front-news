@@ -1,0 +1,7 @@
+@import url('./__paragraph/search__paragraph.css');
+@import url('./__title/search__title.css');
+@import url('./__topic/search__topic.css');
+
+.search__body {
+    padding: 80px 416px;
+}

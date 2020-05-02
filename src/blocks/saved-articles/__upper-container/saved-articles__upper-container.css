@@ -1,0 +1,20 @@
+@media (max-width: 767px) {
+  .saved-articles__upper-container {
+    display: flex;
+    margin-bottom: 156px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .saved-articles__upper-container {
+    display: flex;
+    margin-bottom: 118px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .saved-articles__upper-container {
+    display: flex;
+    margin-bottom: 228px;
+  }
+}

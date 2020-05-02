@@ -1,0 +1,13 @@
+.topic__news {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    color: #B6BCBF;
+    margin: 21px 40px 21px 24px;
+    padding: 0;
+    width: 376px;
+    border: none;
+    background: rgb(255, 255, 255);
+}

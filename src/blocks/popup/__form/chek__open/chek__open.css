@@ -1,0 +1,11 @@
+@import url('./_fourth/chek__open_fourth.css');
+
+.chek__open{
+  font-size: 12px;
+  line-height: 15px;
+  color: #FF0000;
+  font-family: Roboto Slab;
+  font-style: normal;
+  font-weight: 400;
+  margin: 3px 0 0;
+}

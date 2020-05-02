@@ -1,0 +1,11 @@
+@import url('./_saved/buttomSave__icon_saved.css');
+
+.buttomSave__icon {
+    padding: 0;
+    margin: 11px 13px 10px;
+    background-repeat: no-repeat;
+}
+
+.buttomSave__icon:hover {
+    background-image: url('../../images/Rectangle2.png');
+}

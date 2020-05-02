@@ -1,0 +1,9 @@
+@import url('./__icon/buttomSave__icon.css');
+
+.buttomSave {
+    margin: 24px 24px 202px 0;
+    padding: 0;
+    background: #FFFFFF;
+    border-radius: 8px;
+    border: none;
+}

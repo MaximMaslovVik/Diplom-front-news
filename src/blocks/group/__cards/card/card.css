@@ -1,0 +1,46 @@
+@import url('./__image/card__image.css');
+@import url('./__data/card__data.css');
+@import url('./__header/card__header.css');
+@import url('./__paragraph/card__paragraph.css');
+@import url('./__source/card__source.css');
+
+.card {
+    position: relative;
+    height: 576px;
+    width: 400px;
+    border-radius: 16px;
+    background: #FFFFFF;
+}
+
+.card_margin {
+    margin-right: 1.1%;
+    margin-bottom: 1.1%;
+    
+}
+
+.title-search {
+    margin: 24px 224px 208px 24px;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+.title-search_text {
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: black;
+    font-weight: 900;
+    margin: 8px 12px;
+}
+
+.buttomDelete {
+    margin: 24px 24px 208px 0;
+    background: transparent;
+    background-color: #fff;
+    border-radius: 8px;
+    width: 40px;
+    padding: 0;
+    color: black;
+    border: none;
+}

@@ -1,0 +1,17 @@
+@media (max-width: 767px) {
+  .not-found__img {
+    width: 96px;
+    height: 96px;
+    margin: auto;
+    background-image: url(../../../../src/images/not-found.png);
+  }
+}
+
+@media (min-width: 768px) {
+  .not-found__img {
+    width: 96px;
+    height: 96px;
+    margin: auto;
+    background-image: url(../../../../src/images/not-found.png);
+  }
+}

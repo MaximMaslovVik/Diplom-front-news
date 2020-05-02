@@ -1,0 +1,122 @@
+@media (max-width: 767px) {
+  .header__search {
+    width: 288px;
+    height: 56px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    outline: none;
+
+    background: #fff;
+
+    border: none;
+    box-sizing: border-box;
+    backdrop-filter: blur(8px);
+
+    border-radius: 100px;
+
+    font-family: Roboto, arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #1a1b22;
+  }
+
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #b6bcbf;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: #b6bcbf;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: #b6bcbf;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: #b6bcbf;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header__search {
+    width: 31em;
+    height: 56px;
+    padding-left: 24px;
+    padding-right: 40px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    outline: none;
+
+    background: #fff;
+
+    border: none;
+    box-sizing: border-box;
+    backdrop-filter: blur(8px);
+
+    border-radius: 100px;
+
+    font-family: Roboto, arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #1a1b22;
+  }
+
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #b6bcbf;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: #b6bcbf;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: #b6bcbf;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: #b6bcbf;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header__search {
+    width: 38em;
+    height: 64px;
+    padding-left: 24px;
+    padding-right: 40px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    outline: none;
+
+    background: #fff;
+
+    border: none;
+    box-sizing: border-box;
+    backdrop-filter: blur(8px);
+
+    border-radius: 100px;
+
+    font-family: Roboto, arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #1a1b22;
+  }
+
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #b6bcbf;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: #b6bcbf;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: #b6bcbf;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: #b6bcbf;
+  }
+}
