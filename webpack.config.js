@@ -95,11 +95,4 @@ module.exports = {
       canPrint: true,
     }),
   ],
-<<<<<<< HEAD
-};
 
-
-
-=======
-};
->>>>>>> origin/level-2
