@@ -18,4 +18,7 @@ const presets = [
 ];
 
 module.exports = { presets };
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/level-2

@@ -13,7 +13,11 @@
     border-radius: 100px;
     background: none;
     cursor: url(../../../images/lapka.png), pointer;
+<<<<<<< HEAD
     display: none;
+=======
+     display: none;
+>>>>>>> origin/level-2
 
     font-family: Roboto, arial, sans-serif;
     font-style: normal;
@@ -62,7 +66,11 @@
     margin-top: 19px;
     margin-bottom: 13px;
     margin-right: 4.5em;
+<<<<<<< HEAD
    /* display: none;*/
+=======
+    /*display: none;*/
+>>>>>>> origin/level-2
 
     border: 1px solid #fff;
     box-sizing: border-box;

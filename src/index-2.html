@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
   <meta name="description" content="Мои новости - дипломная работа "/>
   <meta name="author" content="Maslov Maxim"/>
+<<<<<<< HEAD
   <link rel="icon" type="images/png" href="<%=require('./images/favicon.png').default%>">
   <link rel="shortcut icon" href="<%=require('../src/images/favicon.png')%>" type="image/x-icon"/>
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">">
@@ -15,6 +16,16 @@
 <body>
 
 <div class="root">
+=======
+  <link rel="shortcut icon" href="<%=require('./images/favicon.png').default%>" type="image/x-icon"/>
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+  <link rel="stylesheet" href="./pages/index.css">
+  <title>Мои новости - главная</title>
+</head>
+<body>
+
+<div class="page">
+>>>>>>> origin/level-2
   <!-- Шапка -->
   <header class="header">
     <div class="header__background">
@@ -290,6 +301,7 @@
   <!-- Подвал -->
 
   <footer class="footer">
+<<<<<<< HEAD
     <p class="footer__author">&copy; 2020 Supersite, Powered by News API</p>
     <div class="footer__column">
       <a class="footer__main" href="./index.html">Главная</a>
@@ -299,6 +311,17 @@
       </a>
       <a href="https://www.facebook.com/DMax319" class="footer__fb-url" target="_blank">
         <img src="<%=require('./images/fb-icon.png').default%>" class="footer__fb-img" alt="Facebook">
+=======
+    <p class="footer__info">&copy; 2020 Supersite, Powered by News API</p>
+    <div class="footer__column">
+      <a href="./index.html" class="footer__column-text footer__column-text_header" >Главная</a>
+      <a href="https://praktikum.yandex.ru" class="footer__column-text footer__column-text_link"  target="_blank">Яндекс.Практикум</a>
+      <a href="https://github.com/MaximMaslovVik" class="footer__column-icone footer__column-icone_github" target="_blank">
+        <img src="<%=require('./images/github.png').default%>" class="footer__social-icon" alt="GitHub">
+      </a>
+      <a href="https://www.facebook.com/DMax319" class="footer__column-icone footer__column-icone_facebook" target="_blank">
+        <img src="<%=require('./images/fb-icon.png').default%>" class="footer__social-icon" alt="Facebook">
+>>>>>>> origin/level-2
       </a>
     </div>
   </footer>

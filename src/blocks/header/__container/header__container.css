@@ -18,6 +18,10 @@
 @media (min-width: 1024px) {
   .header__container {
     display: flex;
+<<<<<<< HEAD
     justify-content: flex-end;
+=======
+    justify-content: center;
+>>>>>>> origin/level-2
   }
 }
