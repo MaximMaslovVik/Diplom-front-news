@@ -6,10 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
   <meta name="description" content="Мои новости - дипломная работа "/>
   <meta name="author" content="Maslov Maxim"/>
-  <link rel="icon" href="./images/favicon.png" type="image/x-icon"/>
-  <link rel="shortcut icon" href="<%=require('./images/favicon.png')%>" type="image/x-icon"/>
+  <link rel="shortcut icon" href="<%=require('./images/favicon.png').default%>" type="image/x-icon"/>
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
-  <link rel="stylesheet" href="./pages/style.css">
   <title>Мои новости - главная</title>
 </head>
 <body>
@@ -68,7 +66,8 @@
       <button class="header__button header__button_press">Нажал</button>
     </div>
     </section>
-  </div>
+   </div>
+    </div>
   </header>
 
   <section class="preloader">
@@ -145,10 +144,10 @@
   </section>
 
   <main class="main">
-    <picture class="about__image">
-      <source class="author__image" srcset="<%=require('./images/image-1.png').default%>"  media="(max-width:320px)">
-      <source class="author__image" srcset="<%=require('./images/image-2.png').default%>" media="(max-width: 768px)">
-      <img class="main__avatar" srcset="<%=require('./images/avatar-sample.png').default%>"  alt="фото автора">
+    <picture class="main__avatar">
+      <source class="main__avatar" srcset="<%=require('./images/image-1.png').default%>"  media="(max-width:320px)">
+      <source class="main__avatar" srcset="<%=require('./images/image-2.png').default%>" media="(max-width: 768px)">
+      <img class="main__avatar" srcset="<%=require('./images/avatar-sample.png').default%>" src="./images/avatar-sample.png" alt="фото автора">
     </picture>
 
     <div class="main__container">
@@ -179,6 +178,7 @@
       </a>
     </div>
   </footer>
+
   <div class="popup popup-signin">
     <div class="popup__content">
       <img src="<%=require('./images/close.png').default%>" alt="" class="popup__close">

@@ -6,10 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
   <meta name="description" content="Мои новости - дипломная работа "/>
   <meta name="author" content="Maslov Maxim"/>
-  <link rel="icon" href="./images/favicon.png" type="image/x-icon"/>
-  <link rel="shortcut icon" href="<%=require('./images/favicon.png')%>" type="image/x-icon"/>
+  <link rel="shortcut icon" href="<%=require('./images/favicon.png').default%>" type="image/x-icon"/>
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
-  <link rel="stylesheet" href="./pages/secondary.css">
   <title>Сохраненые статьи</title>
 </head>
 <body>
@@ -238,6 +236,6 @@
   </footer>
 
 </div>
-  <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+  <script src="<%= htmlWebpackPlugin.files.chunks.articles.entry %>"></script>
 </body>
 </html>
