@@ -1,0 +1,29 @@
+@media (max-width: 767px) {
+  .popup__url-signin {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+
+    color: #2f71e5;
+  }
+}
+
+@media (min-width: 768px) {
+  .popup__url-signin {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+
+    color: #2f71e5;
+  }
+}
