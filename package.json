@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MaximMaslovVik/diplom-front.git"
+    "url": "git+https://github.com/MaximMaslovVik/Diplom-front-news.git"
   },
   "author": "Maslov Maxim",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MaximMaslovVik/diplom-front/issues"
+    "url": "https://github.com/MaximMaslovVik/Diplom-front-news/issues"
   },
-  "homepage": "https://github.com/MaximMaslovVik/diplom-front",
+  "homepage": "https://github.com/MaximMaslovVik/Diplom-front-news",
   "devDependencies": {
     "@babel/cli": "7.8.4",
     "@babel/core": "7.8.3",
