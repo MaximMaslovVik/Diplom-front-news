@@ -9,4 +9,7 @@ module.exports = {
     }),
   ],
 };
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/level-2
