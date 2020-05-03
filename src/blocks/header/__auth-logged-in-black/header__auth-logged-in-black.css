@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 @media (max-width: 767px) {
   .header__auth-logged-in-black {
     display: flex;
@@ -87,27 +87,11 @@
 
     color: #1a1b22;
   }
-=======
-@media (max-width: 767px) {
-  .header__auth-logged-in-black {
-    display: flex;
-    align-items: center;
-    width: 288px;
-    height: 56px;
-    margin-left: 16px;
-    padding-left: 106px;
-    margin-top: 22px;
-    margin-bottom: 24px;
-    border: 1px solid #fff;
-    box-sizing: border-box;
-    border-radius: 100px;
-    background: none;
-    cursor: url(../../../images/lapka.png), pointer;
-<<<<<<< HEAD
+
     /* display: none; */
-=======
+
      display: none;
->>>>>>> origin/level-2
+
 
     font-family: Roboto, arial, sans-serif;
     font-style: normal;
@@ -132,11 +116,9 @@
     border: 1px solid #1a1b22;
     box-sizing: border-box;
     border-radius: 100px;
-<<<<<<< HEAD
-    /* display: none; */
-=======
+
      display: none;
->>>>>>> origin/level-2
+
 
     justify-content: center;
     font-family: Roboto, arial, sans-serif;
@@ -161,11 +143,7 @@
     margin-top: 19px;
     margin-bottom: 13px;
     margin-right: 4.5em;
-<<<<<<< HEAD
-    /* display: none; */
-=======
-     /*display: none;*/
->>>>>>> origin/level-2
+
 
     border: 1px solid #1a1b22;
     box-sizing: border-box;
@@ -182,5 +160,5 @@
 
     color: #1a1b22;
   }
->>>>>>> 5fdf3f9f48979695bf4947c9b706cc6cad16fd35
+
 }
