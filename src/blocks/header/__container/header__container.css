@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 @media (max-width: 767px) {
   .header__container {
     display: flex;
@@ -21,7 +21,7 @@
     display: flex;
 
   }
-=======
+
 @media (max-width: 767px) {
   .header__container {
     display: flex;
@@ -42,11 +42,9 @@
 @media (min-width: 1024px) {
   .header__container {
     display: flex;
-<<<<<<< HEAD
+
     justify-content: flex-end;
-=======
-    justify-content: center;
->>>>>>> origin/level-2
-  }
->>>>>>> 5fdf3f9f48979695bf4947c9b706cc6cad16fd35
+
+    }
+
 }
