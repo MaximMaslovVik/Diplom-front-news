@@ -11,12 +11,8 @@
   animation: spin .75s infinite linear;
   margin-top: 80px;
 
-<<<<<<< HEAD
-	
-=======
-	animation: spin .75s infinite linear;
 
->>>>>>> 5fdf3f9f48979695bf4947c9b706cc6cad16fd35
+
 }
 
 @keyframes spin {
