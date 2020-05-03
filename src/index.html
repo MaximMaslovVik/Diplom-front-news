@@ -8,10 +8,9 @@
   <meta name="author" content="Maslov Maxim"/>
   <link rel="shortcut icon" href="<%=require('./images/favicon.png').default%>" type="image/x-icon"/>
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
-<<<<<<< HEAD
+
   <link rel="stylesheet" href="./pages/style.css">
-=======
->>>>>>> origin/level-2
+
   <title>Мои новости - главная</title>
 </head>
 <body>
@@ -57,31 +56,6 @@
       <h1 class="header__title">Что в мире творится?</h1>
       <p class="header__description">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.
       </p>
-<<<<<<< HEAD
-
-          <div class="header__container-search">
-              <input class="header__search" type="text" placeholder="Введите тему новости">
-              <button class="header__button">Искать</button>
-          </div>
-
-          <div class=" header__container-search">
-            <input class="header__search" type="text" placeholder="Ввожу текст">
-            <button class="header__button header__button_hover">Ховер</button>
-        </div>
-        <div class="header__container-search">
-          <input class="header__search" type="text" placeholder="Ввел текст">
-          <button class="header__button header__button_press">Нажал</button>
-        </div>
-
-    </section>
-  </div>
-  </header>
-
-  <section class="preloader">
-    <div class="preloader">
-      <div class="circle-preloader circle-preloader_margin"></div>
-      <p class="preloader__news">Идет поиск новостей...</p>
-=======
       <div class="header__container-search">
           <input class="header__search" type="text" placeholder="Введите тему новости">
           <button class="header__button">Искать</button>
@@ -100,10 +74,9 @@
   </header>
 
   <section class="preloader">
-    <div class="preloader-container">
-      <i class="preloader-circle"> </i>
-      <h3 class="preloader__text">Идет поиск новостей...</h3>
->>>>>>> origin/level-2
+    <div class="preloader">
+      <div class="circle-preloader circle-preloader_margin"></div>
+      <p class="preloader__news">Идет поиск новостей...</p>
     </div>
   </section>
 
@@ -174,17 +147,12 @@
   </section>
 
   <main class="main">
-<<<<<<< HEAD
-    <picture class="about__image">
-      <source class="author__image" srcset="<%=require('./images/image-1.png').default%>"  media="(max-width:320px)">
-      <source class="author__image" srcset="<%=require('./images/image-2.png').default%>" media="(max-width: 768px)">
-      <img class="main__avatar" srcset="<%=require('./images/avatar-sample.png').default%>"  alt="фото автора">
-=======
+
     <picture class="main__avatar">
       <source class="main__avatar" srcset="<%=require('./images/image-1.png').default%>"  media="(max-width:320px)">
       <source class="main__avatar" srcset="<%=require('./images/image-2.png').default%>" media="(max-width: 768px)">
       <img class="main__avatar" srcset="<%=require('./images/avatar-sample.png').default%>" src="./images/avatar-sample.png" alt="фото автора">
->>>>>>> origin/level-2
+
     </picture>
 
     <div class="main__container">

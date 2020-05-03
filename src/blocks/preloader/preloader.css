@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 @import url('./__loader/circle-preloader.css');
 @import url('./__news/preloader__news.css');
 @import url('./__loader/circle-preloader.css');
@@ -7,7 +7,7 @@
   max-width: 1440px;
   padding: 80px 0;
   background: #F5F6F7;
-=======
+
 @import url('./__text/preloader__text.css');
 
 @media (max-width: 767px) {
@@ -68,5 +68,6 @@
       transform: rotate(360deg);
     }
   }
->>>>>>> origin/level-2
+
+}
 }
