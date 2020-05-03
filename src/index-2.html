@@ -61,7 +61,7 @@
         Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.
       </p>
       <div class="header__container-search">
-        <input class="header__search" type="text" placeholder="Введите тему новости">
+        <input required class="header__search" type="text" placeholder="Введите тему новости">
         <button class="header__button">Искать</button>
       </div>
     </section>
@@ -77,12 +77,12 @@
       <form class="popup__form" name="signin">
         <p class="popup__text-email">Email
         </p>
-        <input type="email" name="email" class="popup__input-type popup__input-type_email" pattern="^[A-Za-z]((\.|-)?[A-Za-z0-9]+)+@[A-Za-z0-9](-?[A-Za-z0-9]+)+(\.[A-Za-z]{2,})+$" placeholder="Введите почту">
+        <input required type="email" name="email" class="popup__input-type popup__input-type_email" pattern="^[A-Za-z]((\.|-)?[A-Za-z0-9]+)+@[A-Za-z0-9](-?[A-Za-z0-9]+)+(\.[A-Za-z]{2,})+$" placeholder="Введите почту">
         <span class="popup__error popup__error_email">Неправильный формат email
         </span>
         <p class="popup__text-password-signin">Пароль
         </p>
-        <input type="password" name="password" class="popup__input-type popup__input-type_password" pattern="^(?=.*[A-Z].*[A-Z])(?=.*[!@#$&*])(?=.*[0-9].*[0-9])(?=.*[a-z].*[a-z].*[a-z]).{8,}$" placeholder="Введите пароль">
+        <input required type="password" name="password" class="popup__input-type popup__input-type_password" pattern="^(?=.*[A-Z].*[A-Z])(?=.*[!@#$&*])(?=.*[0-9].*[0-9])(?=.*[a-z].*[a-z].*[a-z]).{8,}$" placeholder="Введите пароль">
         <span class="popup__error popup__error_password">
         </span>
         <button class="button popup__button popup__button_active">Войти
@@ -105,19 +105,19 @@
         <form class="popup__form" name="signup">
           <p class="popup__text-email">Email
           </p>
-          <input type="email" name="email" class="popup__input-type popup__input-type_email"
+          <input required type="email" name="email" class="popup__input-type popup__input-type_email"
             pattern="^[A-Za-z]((\.|-)?[A-Za-z0-9]+)+@[A-Za-z0-9](-?[A-Za-z0-9]+)+(\.[A-Za-z]{2,})+$"
             placeholder="Введите почту">
           <span class="popup__error popup__error_email">
           </span>
           <p class="popup__text-password">Пароль
           </p>
-          <input type="password" name="password" class="popup__input-type popup__input-type_password" pattern="^(?=.*[A-Z].*[A-Z])(?=.*[!@#$&*])(?=.*[0-9].*[0-9])(?=.*[a-z].*[a-z].*[a-z]).{8,}$" placeholder="Введите пароль">
+          <inputrequired  type="password" name="password" class="popup__input-type popup__input-type_password" pattern="^(?=.*[A-Z].*[A-Z])(?=.*[!@#$&*])(?=.*[0-9].*[0-9])(?=.*[a-z].*[a-z].*[a-z]).{8,}$" placeholder="Введите пароль">
           <span class="popup__error popup__error_password">
           </span>
           <p class="popup__text-name">Имя
           </p>
-          <input type="text" name="name" class="popup__input-type popup__input-type_name"
+          <input required type="text" name="name" class="popup__input-type popup__input-type_name"
             minlength="2" maxlength="20" pattern="^([А-ЯЁ]{1}[а-яё]+)(-[А-ЯЁ]{1}[а-яё]+)?$"
             placeholder="Введите своё имя">
           <span class="popup__error popup__error_name">
