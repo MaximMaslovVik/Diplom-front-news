@@ -148,12 +148,10 @@
   </section>
 
   <main class="main">
-
-    <picture class="main__avatar">
-      <source class="main__avatar" srcset="<%=require('./images/image-1.png').default%>"  media="(max-width:320px)">
-      <source class="main__avatar" srcset="<%=require('./images/image-2.png').default%>" media="(max-width: 768px)">
-      <img class="main__avatar" srcset="<%=require('./images/avatar-sample.png').default%>" src="./images/avatar-sample.png" alt="фото автора">
-
+    <picture class="about__image">
+      <source class="author__image" srcset="<%=require('./images/image-1.png').default%>"  media="(max-width:320px)">
+      <source class="author__image" srcset="<%=require('./images/image-2.png').default%>" media="(max-width: 768px)">
+      <img class="main__avatar" srcset="<%=require('./images/avatar-sample.png').default%>"  alt="фото автора">
     </picture>
 
     <div class="main__container">
