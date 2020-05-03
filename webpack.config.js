@@ -11,7 +11,7 @@ const isDev = process.env.NODE_ENV === 'development';
 module.exports = {
   entry: {
     main: './src/index.js',
-    articles: './src/secondary.js',
+    articles: './src/saved-articles.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -53,18 +53,8 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-
       filename: 'style.[contenthash].css',
     }),
-/*
-    new MiniCssExtractPlugin({
-      filename: 'secondary.[contenthash].css',
-    }),
-*/
-
-      filename: 'style.[contenthash].css'
-    }),
-
     new HtmlWebpackPlugin({
       // Означает, что:
       inject: false, // стили НЕ нужно прописывать внутри тегов
@@ -76,8 +66,8 @@ module.exports = {
       // Означает, что:
       inject: false, // стили НЕ нужно прописывать внутри тегов
       hash: true, // для страницы нужно считать хеш
-      template: './src/secondary.html', // откуда брать образец для сравнения с текущим видом проекта
-      filename: 'secondary.html', // имя выходного файла, то есть того, что окажется в папке dist после сборки
+      template: './src/saved-articles.html', // откуда брать образец для сравнения с текущим видом проекта
+      filename: 'saved-articles.html', // имя выходного файла, то есть того, что окажется в папке dist после сборки
     }),
     new WebpackMd5Hash(),
     new webpack.DefinePlugin({
@@ -94,4 +84,4 @@ module.exports = {
       canPrint: true,
     }),
   ],
-
+};
