@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const presets = [
   [
     '@babel/env',
@@ -17,32 +16,3 @@ const presets = [
     },
   ],
 ];
-
-module.exports = { presets };
-
-=======
-const presets = [
-  [
-    '@babel/env',
-    {
-      targets: { // указать цели, для полифилов
-        esmodules: true,
-        android: '67',
-        ios: '12',
-        edge: '17',
-        firefox: '60',
-        chrome: '64',
-        safari: '11.1',
-      },
-      useBuiltIns: 'usage', // эта настройка babel-polyfill, если стоит значение usage, то будут подставлятся полифилы для версий браузеров которые указали ниже.
-      corejs: '3.1.4', // явно проставить версию corejs
-    },
-  ],
-];
-
-module.exports = { presets };
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/level-2
->>>>>>> 5fdf3f9f48979695bf4947c9b706cc6cad16fd35
