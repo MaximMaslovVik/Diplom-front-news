@@ -1,83 +1,44 @@
-@import url('./__content/popup__content.css');
-@import url('./__close/popup__close.css');
-@import url('./__title/popup__title.css');
-@import url('./__form/popup__form.css');
-@import url('./__text-email/popup__text-email.css');
-@import url('./__input-type/popup__input-type.css');
-@import url('./__error/popup__error.css');
-@import url('./__error/_duplicate/popup__error_duplicate.css');
-@import url('./__text-password/popup__text-password.css');
-@import url('./__button/popup__button.css');
-@import url('./__text-and/popup__text-and.css');
-@import url('./__url-signup/popup__url-signup.css');
-@import url('./__text-name/popup__text-name.css');
-@import url('./__url-signin/popup__url-signin.css');
-@import url('./_is-opened/popup_is-opened.css');
-@import url('./__button/_active/popup__button_active.css');
-@import url('./__content-success/popup__content-success.css');
-@import url('./__text-password-signin/popup__text-password-signin.css');
-@import url('./__title-success/popup__title-success.css');
-@import url('./__url-signin-success/popup__url-signin-success.css');
+@import url(./__content/popup__content.css);
+@import url(./__close/popup__close.css);
+@import url(./__title/popup__title.css);
+@import url(./__form/popup__form.css);
+@import url(./__input/popup__input.css);
+@import url(./__button/popup__button.css);
+@import url(./_is-opened/popup_is-opened.css);
+@import url(./__button/popup__button_active.css);
 
-@media (max-width: 767px) {
-  .popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding-top: 56px;
-    background-image: url(../../images/main-background-320-768.png);
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-    display: none;
-  }
-
-  .popup_is-opened {
-    display: flex;
-  }
+.popup,.popup-registration, .popup-signup {
+  position: fixed;
+  width: 430px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@media (min-width: 768px) {
-  .popup {
-   /* position: fixed;*/
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, .5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-    display: none;
-  }
-
-  .popup_is-opened {
-    display: flex;
-  }
+.popup {
+  display: none;
+  height: 100%;
 }
 
-@media (min-width: 1024px) {
-  .popup {
-    /*position: fixed;*/
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, .5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-    /*display: none;*/
-  }
+.popup-registration {
+  display: none;
+  height: 100%;
+}
 
-  .popup_is-opened {
-    display: flex;
-  }
+.popup-signup {
+  display: none;
+  height: 100%;
+}
+
+.news_popup {
+  margin: 0;
+}
+
+.popup__block {
+  display: flex;
+  flex-direction: row;
 }

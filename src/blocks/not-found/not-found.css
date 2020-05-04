@@ -1,27 +1,11 @@
-@import url('./__img/not-found__img.css');
-@import url('./__title/not-found__title.css');
-@import url('./__text/not-found__text.css');
+@import url('./__image/not-found__image.css');
+@import url('./__header/not-found__header.css');
+@import url('./__paragraph/not-found__paragraph.css');
 
-@media (max-width: 767px) {
-  .not-found {
-    /* display: none; */
-    display: flex;
-    background: #f5f6f7;
-  }
-
-  .not-found-container {
-    margin: 80px auto 80px;
-  }
-}
-
-@media (min-width: 768px) {
-  .not-found {
-    /* display: none; */
-    display: flex;
-    background: #f5f6f7;
-  }
-
-  .not-found-container {
-    margin: 80px auto 80px;
-  }
+.not-found {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
 }

@@ -12,17 +12,13 @@
       border-radius: 100px;
       background: none;
       cursor: url(../../../images/lapka.png), pointer;
-
        display: none;
-
-
       font-family: Roboto, arial, sans-serif;
       font-style: normal;
       font-weight: 500;
       font-size: 18px;
       line-height: 24px;
       padding-left: 70px;
-
       color: #fff;
     }
   }
@@ -34,15 +30,10 @@
     margin-top: 14px;
     margin-right: 2.5em;
     margin-bottom: 12px;
-
     border: 1px solid #fff;
     box-sizing: border-box;
     border-radius: 100px;
-
     /* display: none; */
-
-
-
     justify-content: center;
     font-family: Roboto, arial, sans-serif;
     font-style: normal;
@@ -51,7 +42,6 @@
     line-height: 24px;
     background: none;
     cursor: url(../../../images/lapka.png), pointer;
-
     color: #fff;
   }
 }
@@ -63,74 +53,7 @@
     margin-right: 5em;
     margin-top: 19px;
     margin-bottom: 13px;
-
     /* display: none; */
-
-
-    border: 1px solid #fff;
-    box-sizing: border-box;
-    border-radius: 100px;
-
-    justify-content: center;
-    font-family: Roboto, arial, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    background: none;
-    cursor: url(../../../images/lapka.png), pointer;
-
-    color: #fff;
-  }
-
-
-      font-family: Roboto, arial, sans-serif;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 24px;
-      padding-left: 70px;
-
-      color: #fff;
-    }
-  }
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  .header__auth {
-    width: 9.5em;
-    height: 40px;
-    margin-top: 14px;
-    margin-right: 2.5em;
-    margin-bottom: 12px;
-
-    border: 1px solid #fff;
-    box-sizing: border-box;
-    border-radius: 100px;
-
-     display: none;
-
-
-    justify-content: center;
-    font-family: Roboto, arial, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    background: none;
-    cursor: url(../../../images/lapka.png), pointer;
-
-    color: #fff;
-  }
-}
-
-@media (min-width: 1024px) {
-  .header__auth {
-    width: 10em;
-    height: 48px;
-    margin-right: 5em;
-    margin-top: 19px;
-    margin-bottom: 13px;
-
     border: 1px solid #fff;
     box-sizing: border-box;
     border-radius: 100px;

@@ -1,25 +1,9 @@
-@media (max-width: 767px) {
-  .popup__content {
-    position: relative;
-    width: 320px;
-    height: 100%;
+.popup__content {
+  width: 430px;
+  background-color: #fff;
+  border-radius: 10px;
+  position: relative;
+  box-sizing: border-box;
+  padding: 34px 36px 28px;
 
-    background: #fff;
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-}
-
-@media (min-width: 768px) {
-  .popup__content {
-    position: relative;
-    width: 430px;
-
-    background: #fff;
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
-    border-radius: 16px;
-  }
 }

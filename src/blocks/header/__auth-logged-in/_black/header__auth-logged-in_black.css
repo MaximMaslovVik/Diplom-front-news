@@ -1,0 +1,6 @@
+@media (min-width: 767px) {
+  .header__auth-logged-in_black {
+    border: 1px solid #1a1b22;
+    color: #1a1b22;
+  }
+}
