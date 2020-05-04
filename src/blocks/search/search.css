@@ -5,5 +5,5 @@
 @import url('./list/list.css');
 
 .search {
-    width: 100%;
+    max-width: 1440px;
 }
