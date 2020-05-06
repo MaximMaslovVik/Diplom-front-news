@@ -74,24 +74,4 @@
   .results__show-more:hover {
     opacity: 0.9;
   }
-
-  .results__show-hover {
-    width: 18em;
-    height: 64px;
-    margin-top: 64px;
-    margin-bottom: 80px;
-    margin-left: 31em;
-    background:#E6E8EB;
-    border-radius: 80px;
-    border: none;
-
-    font-family: Roboto, arial, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 24px;
-    cursor: pointer;
-    opacity: 0.9;
-    color: #1a1b22;
-  }
 }

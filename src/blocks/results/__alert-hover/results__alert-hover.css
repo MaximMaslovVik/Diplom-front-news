@@ -24,7 +24,7 @@
 
 @media (min-width: 1024px) {
   .results__alert-hover {
-    /*display: none;*/
+    display: none;
     position: absolute;
     width: 14px;
     height: 19px;

@@ -72,13 +72,4 @@
     color: #fff;
     box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
   }
-
-  .popup__button-active {
-    background: #2a65cc;
-    border: none;
-    color: #fff;
-    box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
-  }
-
-
 }
