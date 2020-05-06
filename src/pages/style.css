@@ -1,24 +1,19 @@
+@import url('../blocks/header/header.css');
+@import url('../blocks/header/__info/header__info.css');
+@import url('../blocks/main/main.css');
+@import url('../blocks/footer/footer.css');
+@import url('../blocks/results/results.css');
+@import url('../blocks/preloader/preloader.css');
+@import url('../blocks/not-found/not-found.css');
+@import url('../blocks/saved-articles/saved-articles.css');
+@import url('../blocks/popup/popup.css');
 @import url('../vendor/fonts.css');
 @import url('../vendor/normalize.css');
 @import url('../blocks/page/page.css');
-@import url('../blocks/header/header.css');
-@import url('../blocks/popup/popup.css');
-@import url('../blocks/header/__info/header__info.css');
-@import url('../blocks/preloader/preloader.css');
-@import url('../blocks/not-found/not-found.css');
-@import url('../blocks/results/results.css');
-@import url('../blocks/saved-articles/saved-articles.css');
-@import url('../blocks/main/main.css');
-@import url('../blocks/footer/footer.css');
-@import url('../blocks/about/about.css');
-@import url('../blocks/favorites/favorites.css');
-@import url('../blocks/save/save.css');
-@import url('../blocks/saved-articles/saved-articles.css');
-@import url('../blocks/search/search.css');
 
 @media (max-width: 767px) {
   body {
-    width: 100%;
+    width: 320px;
     margin: 0 auto;
     background: #fff;
     font-family: "Roboto", sans-serif;
@@ -45,7 +40,6 @@
     text-rendering: optimizeLegibility;
   }
 }
-
 
 @media (min-width: 1024px) {
   body {
