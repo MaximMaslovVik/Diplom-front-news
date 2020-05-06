@@ -54,18 +54,13 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-
       filename: 'style.[contenthash].css',
+
     }),
-/*
     new MiniCssExtractPlugin({
-      filename: 'secondary.[contenthash].css',
-    }),
 
-
-      filename: 'style.[contenthash].css'
+      filename: 'secondary.[contenthash].css'
     }),
-*/
     new HtmlWebpackPlugin({
       // Означает, что:
       inject: false, // стили НЕ нужно прописывать внутри тегов
