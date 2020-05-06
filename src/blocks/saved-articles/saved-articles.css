@@ -1,0 +1,39 @@
+@import url('./__container/saved-articles__container.css');
+@import url('./__card/_afisha/saved-articles__card_afisha.css');
+@import url('./__card/_dzen/saved-articles__card_dzen.css');
+@import url('./__card/_mediazone/saved-articles__card_mediazone.css');
+@import url('./__author/_dzen/saved-articles__author_dzen.css');
+@import url('./__author/_afisha/saved-articles__author_afisha.css');
+@import url('./__author/_mediazone/saved-articles__author_mediazone.css');
+@import url('./__card/saved-articles__card.css');
+@import url('./__upper-container/saved-articles__upper-container.css');
+@import url('./__keyword/saved-articles__keyword.css');
+@import url('./__remove/saved-articles__remove.css');
+@import url('./__trash/saved-articles_trash.css');
+@import url('./__warning/saved-articles__warning.css');
+@import url('./__keyword-text/saved-articles__keyword-text.css');
+@import url('./__trash-hover/saved-articles__trash-hover.css');
+@import url('./__warning-text/saved-articles__warning-text.css');
+@import url('./__time/saved-articles__time.css');
+@import url('./__title/saved-articles__title.css');
+@import url('./__description/saved-articles__description.css');
+@import url('./__author/saved-articles__author.css');
+
+@media (max-width: 767px) {
+  .saved-articles {
+    width: 320px;
+    background: #f5f6f7;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .saved-articles {
+    background: #f5f6f7;
+  }
+}
+
+@media (min-width: 1024px) {
+  .saved-articles {
+    background: #f5f6f7;
+  }
+}

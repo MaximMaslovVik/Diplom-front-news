@@ -1,0 +1,41 @@
+@import url('./__title/results__title.css');
+@import url('./__container/results__container.css');
+@import url('./__show-more/results__show-more.css');
+@import url('./__card/_lenta/results__card_lenta.css');
+@import url('./__card/_medusa/results__card_medusa.css');
+@import url('./__card/_ria/results__card_ria.css');
+@import url('./__bookmark/results__bookmark.css');
+@import url('./__alert/results__alert.css');
+@import url('./__author/results__author.css');
+@import url('./__description/results__description.css');
+@import url('./__notification/results__notification.css');
+@import url('./__time/results__time.css');
+@import url('./__title-card/results__title-card.css');
+@import url('./__card/results__card.css');
+@import url('./__author/_lenta/results__author_lenta.css');
+@import url('./__author/_medusa/results__author_medusa.css');
+@import url('./__author/_ria/results__author_ria.css');
+@import url('./__notification-text/results__notification-text.css');
+@import url('./__alert-hover/results__alert-hover.css');
+@import url('./__alert-active/results__alert-active.css');
+
+@media (max-width: 767px) {
+  .results {
+    /* display: none; */
+    background: #f5f6f7;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .results {
+    /* display: none; */
+    background: #f5f6f7;
+  }
+}
+
+@media (min-width: 1024px) {
+  .results {
+    /* display: none; */
+    background: #f5f6f7;
+  }
+}

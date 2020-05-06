@@ -1,0 +1,44 @@
+@media (max-width: 767px) {
+  .main__description {
+    width: 288px;
+
+    font-family: Roboto, arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: #1a1b22;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__description {
+    width: 424px;
+    margin-top: 16px;
+    margin-left: 0;
+
+    font-family: Roboto, arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: #1a1b22;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main__description {
+    margin-top: 24px;
+    margin-left: 0;
+
+    font-family: Roboto, arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+
+    color: #1a1b22;
+  }
+}

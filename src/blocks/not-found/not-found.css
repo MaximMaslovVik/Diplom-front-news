@@ -1,0 +1,27 @@
+@import url('./__img/not-found__img.css');
+@import url('./__title/not-found__title.css');
+@import url('./__text/not-found__text.css');
+
+@media (max-width: 767px) {
+  .not-found {
+    /* display: none; */
+    display: flex;
+    background: #f5f6f7;
+  }
+
+  .not-found-container {
+    margin: 80px auto 80px;
+  }
+}
+
+@media (min-width: 768px) {
+  .not-found {
+    /* display: none; */
+    display: flex;
+    background: #f5f6f7;
+  }
+
+  .not-found-container {
+    margin: 80px auto 80px;
+  }
+}

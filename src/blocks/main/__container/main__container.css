@@ -1,0 +1,35 @@
+@import url('./__description/main__description.css');
+@import url('./__title/main__title.css');
+
+@media (max-width: 767px) {
+  .main__container {
+    width: 288px;
+    display: flex;
+    flex-direction: column;
+    margin: 16px 16px 80px;
+
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 72px;
+    margin-top: 40px;
+    margin-left: 32px;
+
+  }
+}
+
+@media (min-width: 1024px) {
+  .main__container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 279px;
+    margin-top: 131px;
+    margin-left: 3.5em;
+    margin-right: 6.5em;
+
+  }
+}

@@ -1,0 +1,36 @@
+@media (max-width: 767px) {
+  .popup__error_duplicate {
+    display: block;
+    margin-left: 0;
+    margin-top: 40px;
+    margin-bottom: -20px;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    /* visibility: hidden; */
+
+    color: #ff0000;
+  }
+}
+
+@media (min-width: 768px) {
+  .popup__error_duplicate {
+    display: block;
+    margin-left: 0;
+    margin-top: 17px;
+    margin-bottom: -33px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    /* visibility: hidden; */
+
+    color: #ff0000;
+  }
+}

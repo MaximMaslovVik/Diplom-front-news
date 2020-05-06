@@ -1,0 +1,33 @@
+@media (max-width: 767px) {
+  .not-found__text {
+    width: 310px;
+    margin-top: 16px;
+
+    font-family: Roboto, arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+
+    text-align: center;
+
+    color: #B6BCBF;
+  }
+}
+
+@media (min-width: 768px) {
+  .not-found__text {
+    width: 310px;
+    margin-top: 16px;
+
+    font-family: Roboto, arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+
+    text-align: center;
+
+    color: #B6BCBF;
+  }
+}
