@@ -25,7 +25,6 @@
 
 @media (max-width: 320px) {
   .page {
-    max-width: 320px;
     padding: 0px;
   }
 }
