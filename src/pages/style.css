@@ -53,10 +53,11 @@
     -ms-text-size-adjust: 100%;
     -moz-text-size-adjust: 100%;
     text-rendering: optimizeLegibility;
+
   }
 }
 
- /* *{
+ /* * {
   border: 1px solid red;
   box-sizing: border-box;
-} */
+}*/
