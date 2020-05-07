@@ -2,16 +2,16 @@
 
 @media (max-width: 767px) {
   .main__avatar {
-    width: 100%;
-
-    margin: 32px auto 24px;
+    width: 272px;
+    height: 272px;
+    margin: 32px auto 24px auto;
 
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .main__avatar  {
-    width: 272px;
+    width: 232px;
     height: 232px;
     margin: 61px auto 61px 40px;
 
