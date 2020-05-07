@@ -3,213 +3,187 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <meta name="description" content="Мои новости - дипломная работа "/>
     <meta name="author" content="Maslov Maxim"/>
-    <link rel="icon" type="images/png" href="<%=require('./images/favicon.png').default%>">
-    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">  <title>Мои новости - главная</title>
+    <link rel="shortcut icon" href="<%=require('./images/favicon.png').default%>" type="image/x-icon"/>
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
+    <title>Мои новости - главная</title>
   </head>
 
   <body>
     <div class="page">
 
-    <!-- Шапка -->
-    <header class="header">
-      <div class="header__background">
-        <nav class="header__navigation">
-          <a href="./index.html" class="header__logo">
-            NewsExplorer
-          </a>
-          <div class="header__popup-mobile">
-            <div class="header__menu-mobile-upper">
-              <a href="./index.html" class="header__logo">
+      <!-- Шапка -->
+      <header class="header">
+        <div class="header__background">
+          <nav class="header__navigation">
+            <a href="./index.html" class="header__logo">
               NewsExplorer
-              </a>
-              <img src="<%=require('./images/close.png').default%>" alt="" class="header__popup-mobile-close">
+            </a>
+            <div class="header__popup-mobile">
+              <div class="header__menu-mobile-upper">
+                <a href="./index.html" class="header__logo">
+                NewsExplorer
+                </a>
+                <img src="<%=require('./images/close.png').default%>" alt="" class="header__popup-mobile-close">
+              </div>
+            <div class="header__container">
+              <div class="header__menu">
+                <a href="./index.html" class="header__main">
+                  Главная
+                </a>
+                <a href="./secondary.html" class="header__saved-articles">
+                  Сохранённые статьи
+                </a>
+              </div>
+              <button class="header__auth">
+                Авторизоваться
+              </button>
+              <button class="header__auth-logged-in">
+                Грета
+                <span class="header__auth-icon">
+                </span>
+              </button>
             </div>
-          <div class="header__container">
-            <div class="header__menu">
-              <a href="./index.html" class="header__main">
-                Главная
-              </a>
-              <a href="./secondary.html" class="header__saved-articles">
-                Сохранённые статьи
-              </a>
             </div>
-            <button class="header__auth">
-              Авторизоваться
-            </button>
-            <button class="header__auth-logged-in">
-              Грета
-              <span class="header__auth-icon">
-              </span>
-            </button>
-          </div>
-          </div>
-        <img class="header__menu-mobile" src="<%=require('./images/navigation__menu-mobile.png').default%>" alt="меню">
-        </nav>
+          <img class="header__menu-mobile" src="<%=require('./images/navigation__menu-mobile.png').default%>" alt="меню">
+          </nav>
 
-        <!-- Шапка - поиск новостей -->
-      <section class="header__info">
-        <h1 class="header__title">
-          Что в мире творится?
-        </h1>
-        <p class="header__description">
-          Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.
-        </p>
-        <div class="header__container-search">
-          <input class="header__search" type="text" placeholder="Введите тему новости">
-          <button class="header__button">Искать</button>
-        </div>
-      </section>
-    </div>
-    </header>
-
-    <!-- Попап, вход -->
-    <div class="popup popup-signin">
-      <div class="popup__content">
-        <img src="<%=require('./images/close.png').default%>" alt="" class="popup__close">
-        <h3 class="popup__title">Вход
-        </h3>
-        <form class="popup__form" name="signin">
-          <p class="popup__text-email">Email
+          <!-- Шапка - поиск новостей -->
+        <section class="header__info">
+          <h1 class="header__title">
+            Что в мире творится?
+          </h1>
+          <p class="header__description">
+            Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.
           </p>
-          <input type="email" name="email" class="popup__input-type popup__input-type_email" pattern="^[A-Za-z]((\.|-)?[A-Za-z0-9]+)+@[A-Za-z0-9](-?[A-Za-z0-9]+)+(\.[A-Za-z]{2,})+$" placeholder="Введите почту">
-          <span class="popup__error popup__error_email">Неправильный формат email
-          </span>
-          <p class="popup__text-password-signin">Пароль
-          </p>
-          <input type="password" name="password" class="popup__input-type popup__input-type_password" pattern="^(?=.*[A-Z].*[A-Z])(?=.*[!@#$&*])(?=.*[0-9].*[0-9])(?=.*[a-z].*[a-z].*[a-z]).{8,}$" placeholder="Введите пароль">
-          <span class="popup__error popup__error_password">
-          </span>
-          <button class="button popup__button popup__button_active">Войти
-          </button>
-        </form>
-        <p class="popup__text-and">или
-          <span class="popup__url-signup">
-            Зарегистрироваться
-          </span>
-        </p>
+          <div class="header__container-search">
+            <input class="header__search" type="text" placeholder="Введите тему новости">
+            <button class="header__button">Искать</button>
+          </div>
+        </section>
       </div>
-    </div>
+      </header>
 
-    <!-- Попап, Регистрация -->
-    <div class="popup popup-signup">
+      <!-- Попап, вход -->
+      <div class="popup popup-signin">
         <div class="popup__content">
           <img src="<%=require('./images/close.png').default%>" alt="" class="popup__close">
-          <h3 class="popup__title">Регистрация
+          <h3 class="popup__title">Вход
           </h3>
-          <form class="popup__form" name="signup">
+          <form class="popup__form" name="signin">
             <p class="popup__text-email">Email
             </p>
-            <input type="email" name="email" class="popup__input-type popup__input-type_email"
-              pattern="^[A-Za-z]((\.|-)?[A-Za-z0-9]+)+@[A-Za-z0-9](-?[A-Za-z0-9]+)+(\.[A-Za-z]{2,})+$"
-              placeholder="Введите почту">
-            <span class="popup__error popup__error_email">
+            <input type="email" name="email" class="popup__input-type popup__input-type_email" pattern="^[A-Za-z]((\.|-)?[A-Za-z0-9]+)+@[A-Za-z0-9](-?[A-Za-z0-9]+)+(\.[A-Za-z]{2,})+$" placeholder="Введите почту">
+            <span class="popup__error popup__error_email">Неправильный формат email
             </span>
-            <p class="popup__text-password">Пароль
+            <p class="popup__text-password-signin">Пароль
             </p>
             <input type="password" name="password" class="popup__input-type popup__input-type_password" pattern="^(?=.*[A-Z].*[A-Z])(?=.*[!@#$&*])(?=.*[0-9].*[0-9])(?=.*[a-z].*[a-z].*[a-z]).{8,}$" placeholder="Введите пароль">
             <span class="popup__error popup__error_password">
             </span>
-            <p class="popup__text-name">Имя
-            </p>
-            <input type="text" name="name" class="popup__input-type popup__input-type_name"
-              minlength="2" maxlength="20" pattern="^([А-ЯЁ]{1}[а-яё]+)(-[А-ЯЁ]{1}[а-яё]+)?$"
-              placeholder="Введите своё имя">
-            <span class="popup__error popup__error_name">
-            </span>
-            <span class="popup__error popup__error_duplicate">
-              Такой пользователь уже есть
-            </span>
-            <button class="button popup__button popup__button_active">
-              Зарегистрироваться
+            <button class="button popup__button popup__button_active">Войти
             </button>
           </form>
-          <p class="popup__text-and">
-            или
-            <span class="popup__url-signin">
-              Войти
+          <p class="popup__text-and">или
+            <span class="popup__url-signup">
+              Зарегистрироваться
             </span>
           </p>
         </div>
       </div>
 
-      <!-- Попап, пользователь успешно зарегистрирован -->
-      <div class="popup popup-success">
-        <div class="popup__content-success">
-          <img src="<%=require('./images/close.png').default%>" alt="" class="popup__close">
-          <h3 class="popup__title-success">
-            Пользователь успешно зарегистрирован!
-          </h3>
-          <span class="popup__url-signin-success">
-            Выполнить вход
-          </span>
+      <!-- Попап, Регистрация -->
+      <div class="popup popup-signup">
+          <div class="popup__content">
+            <img src="<%=require('./images/close.png').default%>" alt="" class="popup__close">
+            <h3 class="popup__title">Регистрация
+            </h3>
+            <form class="popup__form" name="signup">
+              <p class="popup__text-email">Email
+              </p>
+              <input type="email" name="email" class="popup__input-type popup__input-type_email"
+                pattern="^[A-Za-z]((\.|-)?[A-Za-z0-9]+)+@[A-Za-z0-9](-?[A-Za-z0-9]+)+(\.[A-Za-z]{2,})+$"
+                placeholder="Введите почту">
+              <span class="popup__error popup__error_email">
+              </span>
+              <p class="popup__text-password">Пароль
+              </p>
+              <input type="password" name="password" class="popup__input-type popup__input-type_password" pattern="^(?=.*[A-Z].*[A-Z])(?=.*[!@#$&*])(?=.*[0-9].*[0-9])(?=.*[a-z].*[a-z].*[a-z]).{8,}$" placeholder="Введите пароль">
+              <span class="popup__error popup__error_password">
+              </span>
+              <p class="popup__text-name">Имя
+              </p>
+              <input type="text" name="name" class="popup__input-type popup__input-type_name"
+                minlength="2" maxlength="20" pattern="^([А-ЯЁ]{1}[а-яё]+)(-[А-ЯЁ]{1}[а-яё]+)?$"
+                placeholder="Введите своё имя">
+              <span class="popup__error popup__error_name">
+              </span>
+              <span class="popup__error popup__error_duplicate">
+                Такой пользователь уже есть
+              </span>
+              <button class="button popup__button popup__button_active">
+                Зарегистрироваться
+              </button>
+            </form>
+            <p class="popup__text-and">
+              или
+              <span class="popup__url-signin">
+                Войти
+              </span>
+            </p>
+          </div>
         </div>
-      </div>
 
-    <!-- Результаты поиска, статьи -->
-    <section class="results">
-      <h2 class="results__title">
-        Результаты поиска
-      </h2>
-      <div class="results__container">
-        <article class="results__card results__card_lenta">
-          <div class="results__bookmark">
-              <div class="results__alert">
-                </div>
-                <div class="results__alert-hover">
-                </div>
-                <div class="results__alert-active">
-                </div>
-            <div class="results__notification">
-              <p class="results__notification-text">Войдите, чтобы сохранять статьи</p>
-            </div>
-          </div>
-          <time class="results__time" datetime="2019-08-02">
-            2 августа, 2019
-          </time>
-          <h3 class="results__title-card" >
-            Национальное достояние – парки
-          </h3>
-          <p class="results__description" >
-            В 2016 году Америка отмечала важный юбилей:
-            сто лет назад здесь начала складываться система
-            национальных парков – охраняемых территорий, где
-            и сегодня каждый может приобщиться к природе.
-          </p>
-          <address class="results__author results__author_lenta" >
-            Лента.ру
-          </address>
-        </article>
-        <article class="results__card results__card_medusa">
-          <div class="results__bookmark">
-            <div class="results__alert">
-              </div>
-              <div class="results__alert-hover">
-              </div>
-              <div class="results__alert-active">
-              </div>
-          <div class="results__notification">
-            <p class="results__notification-text">Войдите, чтобы сохранять статьи</p>
+        <!-- Попап, пользователь успешно зарегистрирован -->
+        <div class="popup popup-success">
+          <div class="popup__content-success">
+            <img src="<%=require('./images/close.png').default%>" alt="" class="popup__close">
+            <h3 class="popup__title-success">
+              Пользователь успешно зарегистрирован!
+            </h3>
+            <span class="popup__url-signin-success">
+              Выполнить вход
+            </span>
           </div>
         </div>
+
+      <!-- Результаты поиска, статьи -->
+      <section class="results">
+        <h2 class="results__title">
+          Результаты поиска
+        </h2>
+        <div class="results__container">
+          <article class="results__card results__card_lenta">
+            <div class="results__bookmark">
+                <div class="results__alert">
+                  </div>
+                  <div class="results__alert-hover">
+                  </div>
+                  <div class="results__alert-active">
+                  </div>
+              <div class="results__notification">
+                <p class="results__notification-text">Войдите, чтобы сохранять статьи</p>
+              </div>
+            </div>
             <time class="results__time" datetime="2019-08-02">
               2 августа, 2019
             </time>
             <h3 class="results__title-card" >
-              Лесные огоньки: история одной фотографии
+              Национальное достояние – парки
             </h3>
             <p class="results__description" >
-              Фотограф отвлеклась от освещения суровой политической
-              реальности Мексики, чтобы запечатлеть ускользающую
-              красоту одного из местных чудес природы.
+              В 2016 году Америка отмечала важный юбилей:
+              сто лет назад здесь начала складываться система
+              национальных парков – охраняемых территорий, где
+              и сегодня каждый может приобщиться к природе.
             </p>
-            <address class="results__author results__author_medusa" >
-              Медуза
+            <address class="results__author results__author_lenta" >
+              Лента.ру
             </address>
           </article>
-          <article class="results__card results__card_ria">
+          <article class="results__card results__card_medusa">
             <div class="results__bookmark">
               <div class="results__alert">
                 </div>
@@ -221,73 +195,100 @@
               <p class="results__notification-text">Войдите, чтобы сохранять статьи</p>
             </div>
           </div>
-            <time class="results__time" datetime="2019-08-02">
-              2 августа, 2019
-            </time>
-            <h3 class="results__title-card" >
-              «Первозданная тайга»: новый фотопроект Игоря Шпиленка
-            </h3>
-            <p class="results__description" >
-              Знаменитый фотограф снимает первозданные леса России,
-              чтобы рассказать о необходимости их сохранения. В этот раз
-              он отправился в Двинско-Пинежскую тайгу, где...
-            </p>
-            <address class="results__author results__author_ria" >
-              Риа
-            </address>
-          </article>
-      </div>
-      <button class="results__show-more">
-        Показать еще
-      </button>
-    </section>
-
-    <!-- Прелоудер -->
-    <section class="preloader">
-      <div class="preloader-container">
-        <i class="preloader-circle">
-        </i>
-        <h3 class="preloader__text">
-          Идет поиск новостей...
-        </h3>
-      </div>
-    </section>
-
-    <!-- Ничего не найдено -->
-    <section class="not-found">
-      <div class="not-found-container">
-        <div class="not-found__img">
+              <time class="results__time" datetime="2019-08-02">
+                2 августа, 2019
+              </time>
+              <h3 class="results__title-card" >
+                Лесные огоньки: история одной фотографии
+              </h3>
+              <p class="results__description" >
+                Фотограф отвлеклась от освещения суровой политической
+                реальности Мексики, чтобы запечатлеть ускользающую
+                красоту одного из местных чудес природы.
+              </p>
+              <address class="results__author results__author_medusa" >
+                Медуза
+              </address>
+            </article>
+            <article class="results__card results__card_ria">
+              <div class="results__bookmark">
+                <div class="results__alert">
+                  </div>
+                  <div class="results__alert-hover">
+                  </div>
+                  <div class="results__alert-active">
+                  </div>
+              <div class="results__notification">
+                <p class="results__notification-text">Войдите, чтобы сохранять статьи</p>
+              </div>
+            </div>
+              <time class="results__time" datetime="2019-08-02">
+                2 августа, 2019
+              </time>
+              <h3 class="results__title-card" >
+                «Первозданная тайга»: новый фотопроект Игоря Шпиленка
+              </h3>
+              <p class="results__description" >
+                Знаменитый фотограф снимает первозданные леса России,
+                чтобы рассказать о необходимости их сохранения. В этот раз
+                он отправился в Двинско-Пинежскую тайгу, где...
+              </p>
+              <address class="results__author results__author_ria" >
+                Риа
+              </address>
+            </article>
         </div>
-        <h3 class="not-found__title">
-          Ничего не найдено
-        </h3>
-        <p class="not-found__text">
-          К сожалению по вашему запросу ничего не найдено.
-        </p>
-      </div>
-    </section>
+        <button class="results__show-more">
+          Показать еще
+        </button>
+      </section>
 
-      <!-- Основная информация об авторе -->
-      <main class="main">
-        <picture class="main__avatar">
-          <source class="main__img" srcset="<%=require('./images/image-1.png').default%>" media="(min-width: 320px)" >
-          <source class="main__img" srcset="<%=require('./images/image-2.png').default%>" media="(max-width: 768px)" >
-          <img class="main__img" src="<%=require('./images/avatar-sample.png').default%>" alt="фото автора">
-        </picture>
-        <div class="main__container">
-          <h2 class="main__title">
-            Об авторе
-          </h2>
-          <p class="main__description">
-            Это блок с описанием автора проекта.
-            Здесь следует указать, как вас зовут, чем вы занимаетесь, какими
-            технологиями разработки владеете.
-            Также можно рассказать о процессе
-            обучения в Практикуме, чему вы тут научились,
-            и чем можете помочь потенциальным заказчикам.
+      <!-- Прелоудер -->
+      <section class="preloader">
+        <div class="preloader-container">
+          <i class="preloader-circle">
+          </i>
+          <h3 class="preloader__text">
+            Идет поиск новостей...
+          </h3>
+        </div>
+      </section>
+
+      <!-- Ничего не найдено -->
+      <section class="not-found">
+        <div class="not-found-container">
+          <div class="not-found__img">
+          </div>
+          <h3 class="not-found__title">
+            Ничего не найдено
+          </h3>
+          <p class="not-found__text">
+            К сожалению по вашему запросу ничего не найдено.
           </p>
         </div>
-      </main>
+      </section>
+
+        <!-- Основная информация об авторе -->
+        <main class="main">
+          <picture class="main__avatar">
+            <source class="main__img" srcset="<%=require('./images/image-1.png').default%>" media="(min-width: 320px)" >
+            <source class="main__img" srcset="<%=require('./images/image-2.png').default%>" media="(max-width: 768px)" >
+            <img class="main__img" src="<%=require('./images/avatar-sample.png').default%>" alt="фото автора">
+          </picture>
+          <div class="main__container">
+            <h2 class="main__title">
+              Об авторе
+            </h2>
+            <p class="main__description">
+              Это блок с описанием автора проекта.
+              Здесь следует указать, как вас зовут, чем вы занимаетесь, какими
+              технологиями разработки владеете.
+              Также можно рассказать о процессе
+              обучения в Практикуме, чему вы тут научились,
+              и чем можете помочь потенциальным заказчикам.
+            </p>
+          </div>
+        </main>
 
     <!-- Подвал -->
     <footer class="footer">
@@ -295,13 +296,13 @@
       <a class="footer__main" href="./index.html">Главная</a>
       <a class="footer__ya-praktikum" href="https://praktikum.yandex.ru/" target="_blank">Яндекс.Практикум</a>
       <a class="footer__github-url" href="https://github.com/MaximMaslovVik/Diplom-front-news/tree/level-2" target="_blank">
-        <img class="footer__github-img" src="<%=require('./images/github.png').default%>" alt="github">
+        <img class="footer__github-img" src="./images/github.png" alt="github">
       </a>
       <a class="footer__fb-url" href="https://www.facebook.com/DMax319" target="_blank">
-        <img class="footer__fb-img" src="<%=require('./images/fb-icon.png').default%>" alt="Facebook">
+        <img class="footer__fb-img" src="./images/fb-icon.png" alt="Facebook">
       </a>
     </footer>
-  </div>
-    <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+    </div>
+  <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
   </body>
 </html>

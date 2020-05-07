@@ -13,7 +13,7 @@
 
 @media (max-width: 767px) {
   body {
-    width: 320px;
+    width: 100%;
     margin: 0 auto;
     background: #fff;
     font-family: "Roboto", sans-serif;
@@ -56,8 +56,8 @@
 
   }
 }
-
- /* * {
+/*
+ * {
   border: 1px solid red;
   box-sizing: border-box;
 }*/
