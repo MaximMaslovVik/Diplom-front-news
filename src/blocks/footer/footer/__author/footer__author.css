@@ -1,0 +1,48 @@
+@media (max-width: 767px) {
+  .footer__author {
+    grid-area: 3 / 1 / 4 / 2;
+    margin-top: 15px;
+    margin-left: 16px;
+
+    font-family: Roboto, arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #b6bcbf;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer__author {
+    width: 150px;
+    margin-top: 24px;
+    margin-bottom: 18px;
+    margin-left: 40px;
+
+    font-family: Roboto, arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #b6bcbf;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer__author {
+    margin-left: 6.5em;
+    margin-top: 33px;
+    margin-bottom: 25px;
+
+    font-family: Roboto, arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #b6bcbf;
+  }
+}

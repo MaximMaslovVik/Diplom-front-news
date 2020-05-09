@@ -1,0 +1,27 @@
+@import url('./__avatar/main__avatar.css');
+@import url('./__container/main__container.css');
+
+@media (max-width: 767px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main {
+    display: flex;
+    background: #fff;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main {
+    display: flex;
+    background: #fff;
+    width: 100%;
+  }
+}

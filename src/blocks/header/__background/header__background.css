@@ -1,0 +1,26 @@
+@media (max-width: 767px) {
+  .header__background {
+    height: 536px;
+    background-image: url(../../../images/main-background-320-768.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header__background {
+    height: 400px;
+    background-image: url(../../../images/main-background-768-1023.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header__background {
+    height: 576px;
+    background-image: url(../../../images/main-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

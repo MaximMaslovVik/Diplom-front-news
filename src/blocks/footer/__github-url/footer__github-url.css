@@ -1,0 +1,33 @@
+@media (max-width: 767px) {
+  .footer__github-url {
+    grid-area: 1 / 2 / 2 / 3;
+    width: 24px;
+    height: 24px;
+    margin-top: 20px;
+    margin-left: 16px;
+    margin-right: 28px;
+    cursor: url(../../../images/lapka.png), pointer;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer__github-url {
+    height: 24px;
+    margin-left: 2em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 28px;
+    cursor: url(../../../images/lapka.png), pointer;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer__github-url {
+    height: 24px;
+    margin-left: 2em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 28px;
+    cursor: url(../../../images/lapka.png), pointer;
+  }
+}

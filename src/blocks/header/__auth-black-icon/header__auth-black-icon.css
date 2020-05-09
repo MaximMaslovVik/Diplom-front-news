@@ -1,0 +1,26 @@
+@media (max-width: 767px) {
+  .header__auth-black-icon {
+    width: 18px;
+    height: 18px;
+    margin-left: 8px;
+    background-image: url(../../../../src/images/Union.png);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header__auth-black-icon {
+    width: 17.41px;
+    height: 16px;
+    margin-left: 8px;
+    background-image: url(../../../../src/images/Union-black.png);
+  }
+}
+
+@media (min-width: 1024px) {
+  .header__auth-black-icon {
+    width: 17.41px;
+    height: 16px;
+    margin-left: 8px;
+    background-image: url(../../../../src/images/Union-black.png);
+  }
+}

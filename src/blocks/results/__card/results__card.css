@@ -1,0 +1,41 @@
+@media (max-width: 767px) {
+  .results__card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 288px;
+    border-radius: 16px;
+    background-color: #fff;
+    text-decoration: none;
+    cursor: url(../../../images/lapka.png), pointer;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .results__card {
+    display: flex;
+    width: 14em;
+    flex-direction: column;
+    border-radius: 16px;
+    background-color: #fff;
+    text-decoration: none;
+    margin-right: 0.25em;
+    margin-left: 0.25em;
+    cursor: url(../../../images/lapka.png), pointer;
+  }
+}
+
+@media (min-width: 1024px) {
+  .results__card {
+    display: flex;
+    width: 25em;
+    flex-direction: column;
+    border-radius: 16px;
+    background-color: #fff;
+    text-decoration: none;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    cursor: url(../../../images/lapka.png), pointer;
+  }
+}
+

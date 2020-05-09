@@ -1,0 +1,33 @@
+@media (max-width: 767px) {
+   .main__img {
+      width: 272px;
+      height: 272px;
+      margin: 0 auto;
+  /*
+      border-radius: 1000px;
+  */
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .main__img {
+      width: 232px;
+      height: 232px;
+      margin: 0 auto ;
+
+      border-radius: 1000px;
+
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .main__img {
+      height: 464px;
+      width: 464px;
+      margin-left: 6.5em;
+
+      margin: 0 auto;
+      border-radius: 1000px;
+
+    }
+  }

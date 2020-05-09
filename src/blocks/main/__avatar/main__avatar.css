@@ -1,0 +1,30 @@
+@import url('./__img/main__img.css');
+
+@media (max-width: 767px) {
+  .main__avatar {
+    width: 272px;
+    height: 272px;
+    margin: 32px auto 24px auto;
+
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .main__avatar  {
+    width: 232px;
+    height: 232px;
+    margin: 61px auto 61px 40px;
+
+
+  }
+}
+
+@media (min-width: 1024px) {
+  .main__avatar  {
+    height: 464px;
+
+    margin: 80px auto 80px 104px;
+
+
+  }
+}
