@@ -8,7 +8,7 @@
     "dev": "cross-env NODE_ENV=development webpack-dev-server --mode development --open --watch",
     "build": "cross-env NODE_ENV=production rimraf dist && webpack --mode production",
     "deploy": "cross-env NODE_ENV=production gh-pages -d dist",
-    "deployme": "cross-env NODE_ENV=production npm run build && scp -r ./dist/* max@84.201.146.193:/home/max/Diplom-front-news"
+    "deployme": "cross-env NODE_ENV=production npm run build && scp -r ./dist/* max@84.201.146.193:/home/max/news-frontend"
   },
   "repository": {
     "type": "git",
