@@ -7,6 +7,7 @@ export default class MainApi {
   signup(userEmail, userPassword, userName) {
     return fetch(`${this.baseUrl}/signup`, {
       method: 'POST',
+
       headers: {
         'Content-Type': 'application/json',
       },
@@ -28,6 +29,7 @@ export default class MainApi {
   signin(userEmail, userPassword) {
     return fetch(`${this.baseUrl}/signin`, {
       method: 'POST',
+
       body: JSON.stringify({
         email: userEmail,
         password: userPassword,
