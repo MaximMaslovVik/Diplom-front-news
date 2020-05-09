@@ -1,0 +1,30 @@
+.result-card__description {
+  width: calc(100% - 48px);
+  margin: 0px auto;
+  height: 304px;
+  font-family: 'Source Sans Pro', 'Verdana';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+@media (max-width: 1024px) {
+  .result-card__description {
+    width: calc(100% - 40px);
+    height: 287px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .result-card__description {
+    width: calc(100% - 32px);
+    height: 270px;
+  }
+}
+
+@media (max-width: 767px) {
+  .result-card__description {
+/*    height: 246px;*/
+  }
+}

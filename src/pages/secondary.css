@@ -3,13 +3,13 @@
 
 @import url('../blocks/footer/footer.css');
 @import url('../blocks/results/results.css');
+@import url('../blocks/result-card/result-card.css');
 
-
-@import url('../blocks/saved-articles/saved-articles.css');
 @import url('../blocks/popup/popup.css');
 @import url('../vendor/fonts.css');
 @import url('../vendor/normalize.css');
 @import url('../blocks/page/page.css');
+@import url('../blocks/favorites/favorites.css');
 
 @media (max-width: 767px) {
   body {

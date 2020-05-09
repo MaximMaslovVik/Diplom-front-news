@@ -13,7 +13,7 @@
 @import url('./__text-name/popup__text-name.css');
 @import url('./__url-signin/popup__url-signin.css');
 @import url('./_is-opened/popup_is-opened.css');
-@import url('./__button/_active/popup__button_active.css');
+@import url('./__button/_disabled/popup__button_disabled.css');
 @import url('./__content-success/popup__content-success.css');
 @import url('./__text-password-signin/popup__text-password-signin.css');
 @import url('./__title-success/popup__title-success.css');
@@ -35,8 +35,6 @@
     justify-content: center;
     z-index: 2;
     display: none;
-
-
   }
 
   .popup_is-opened {

@@ -1,4 +1,3 @@
-
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin'); // Подключили к проекту плагин
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -55,11 +54,9 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin({
       filename: 'style.[contenthash].css',
-
     }),
     new MiniCssExtractPlugin({
-
-      filename: 'secondary.[contenthash].css'
+      filename: 'secondary.[contenthash].css',
     }),
     new HtmlWebpackPlugin({
       // Означает, что:
@@ -90,5 +87,4 @@ module.exports = {
       canPrint: true,
     }),
   ],
-
 };
