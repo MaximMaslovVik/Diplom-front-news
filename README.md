@@ -76,3 +76,6 @@ npm run build
 ```
 npm run deploy
 ```
+Адрес страницы:
+
+https://diplom-max.ml
