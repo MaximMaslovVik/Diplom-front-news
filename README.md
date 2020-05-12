@@ -5,21 +5,10 @@ Diplom-front-news
 Сборка проекта реализована при помощи Webpack.
 
 1-й файл index.html показывает различные состояния меню и попапов
-2-й файл secondary.html вторая станица сайта
+2-й файл saved/index.html вторая станица сайта
 
-Открытие/закрытие мобильного меню:
-
-document.querySelector('.header__popup-mobile').classList.toggle('header_is-opened');
-Открытие/закрытие popup 'Вход'
-
-document.querySelector('.popup-signin').classList.toggle('popup_is-opened');
-Открытие/закрытие popup 'Регистрация'
-
-document.querySelector('.popup-signup').classList.toggle('popup_is-opened');
-Открытие/закрытие popup 'Успешная регистрация'
-
-document.querySelector('.popup-success').classList.toggle('popup_is-opened');
 Функционал:
+
 Страница "Главная":
 Регистрация пользователя,
 Вход в личный кабинет,
