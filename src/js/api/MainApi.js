@@ -1,129 +1,107 @@
 export default class MainApi {
-  constructor(baseUrl) {
-    this.baseUrl = baseUrl;
+  constructor(routes) {
+    this._routes = routes;
   }
 
-  // регистрация
-  signup(userEmail, userPassword, userName) {
-    return fetch(`${this.baseUrl}/signup`, {
+  signup({ email, password, name }) {
+    return fetch(this._routes.signup, {
       method: 'POST',
-
+      credentials: 'include',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        email: userEmail,
-        password: userPassword,
-        name: userName,
+        email,
+        password,
+        name,
       }),
     })
-      .then((res) => {
-        if (res.ok) {
-          return res.json();
-        }
-        return Promise.reject(res.status);
-      });
+      .catch(err => new Error(err.message));
   }
 
-  // вход
-  signin(userEmail, userPassword) {
-    return fetch(`${this.baseUrl}/signin`, {
+  signin({ email, password }) {
+    return fetch(this._routes.signin, {
       method: 'POST',
-
-      body: JSON.stringify({
-        email: userEmail,
-        password: userPassword,
-      }),
+      credentials: 'include',
       headers: {
         'Content-Type': 'application/json',
       },
+      body: JSON.stringify({
+        email,
+        password,
+      }),
     })
-      .then((res) => {
-        if (res.ok) {
-          return res.json();
-        }
-        return Promise.reject(res.status);
-      })
-      .then((data) => {
-        localStorage.setItem('token', data.userToken);
-        localStorage.setItem('user', JSON.stringify({
-          email: data.email,
-          name: data.name,
-        }));
-        return data;
-      });
+      .catch(err => new Error(err.message));
   }
 
-  // возвращает данные юзера
+  logout() {
+    return fetch(this._routes.logout, {
+      method: 'POST',
+      credentials: 'include',
+    })
+      .catch(err => new Error(err.message));
+  }
+
   getUserData() {
-    return fetch(`${this.baseUrl}/users/me`, {
-      headers: {
-        authorization: `Bearer ${localStorage.getItem('token')}`,
-      },
+    return fetch(this._routes.getCurrentUser, {
+      method: 'GET',
+      credentials: 'include',
     })
-      .then((res) => {
-        if (res.ok) {
-          return res.json();
+      .then(res => {
+        if (res.status !== 200) {
+          throw new Error('Unauthorized');
         }
-        return Promise.reject(res.status);
-      });
+        return res.json();
+      })
+      .catch(err => err);
   }
 
-  // возвращает статьи
   getArticles() {
-    return fetch(`${this.baseUrl}/articles`, {
-      headers: {
-        authorization: `Bearer ${localStorage.getItem('token')}`,
-      },
+    return fetch(this._routes.getArticles, {
+      method: 'GET',
+      credentials: 'include',
     })
-      .then((res) => {
-        if (res.ok) {
-          return res.json();
-        }
-        return Promise.reject(res.status);
-      });
+      .then(res => res.json())
+      .catch(err => console.log(err));
   }
 
-  // создаёт статьи
-  createArticle(userKeyword, userTitle, userText, userDate,
-    userSource, userLink, userImage) {
-    return fetch(`${this.baseUrl}/articles`, {
+  createArticle(newsData) {
+    const {
+      keyword,
+      title,
+      text,
+      source,
+      image,
+      link,
+      date,
+    } = newsData;
+
+    return fetch(this._routes.createArticle, {
       method: 'POST',
-      body: JSON.stringify({
-        keyword: userKeyword,
-        title: userTitle,
-        text: userText,
-        date: userDate,
-        source: userSource,
-        link: userLink,
-        image: userImage,
-      }),
+      credentials: 'include',
       headers: {
         'Content-Type': 'application/json',
-        authorization: `Bearer ${localStorage.getItem('token')}`,
       },
+      body: JSON.stringify({
+        keyword,
+        title,
+        text,
+        source,
+        image,
+        link,
+        date,
+      }),
     })
-      .then((res) => {
-        if (res.ok) {
-          return res.json();
-        }
-        return Promise.reject(res.status);
-      });
+      .then(res => res.json())
+      .catch(err => console.log(err));
   }
 
-  // удаляет статьи
   removeArticle(articleId) {
-    return fetch(`${this.baseUrl}/articles/${articleId}`, {
+    return fetch(`${this._routes.deleteArticle}/${articleId}`, {
       method: 'DELETE',
-      headers: {
-        authorization: `Bearer ${localStorage.getItem('token')}`,
-      },
+      credentials: 'include',
     })
-      .then((res) => {
-        if (res.ok) {
-          return res.json();
-        }
-        return Promise.reject(res.status);
-      });
+      .then(res => res.json())
+      .catch(err => console.log(err));
   }
 }

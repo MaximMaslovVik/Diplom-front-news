@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <meta name="description" content="Мои новости - дипломная работа "/>
+  <meta name="author" content="Maslov Maxim"/>
+  <link rel="icon" href="<%= require('@images/favicon.ico').default %>" type="image/x-icon"/>
+  <link rel="shortcut icon" href="<%= require('@images/favicon.ico').default %>" type="image/x-icon"/>
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.index.css %>"/>
+  <title>Мои новости - главная</title>
+</head>
+<body>
+<div class="root">
+
+    <!-- Шапка -->
+
+  <header class="header header_main container">
+    <div class="header-nav-container"></div>
+    <section class="header-search">
+      <h2 class="header-search__title">Что в мире творится?</h2>
+      <p class="header-search__subtitle">Находите самые свежие статьи на любую тему и сохраняйте в своём&nbsp;личном
+        кабинете.</p>
+      <form class="header-search__form" name="searchForm" novalidate>
+        <div class="header-search__form-group">
+          <input
+            class="header-search__input"
+            type="text"
+            name="search"
+            placeholder="Введите тему новости"
+            required
+          >
+          <p class="form-error header-search__input-error"></p>
+          <button class="button button_blue header-search__button">Искать</button>
+        </div>
+      </form>
+    </section>
+  </header>
+
+    <!-- Основная информация об авторе -->
+
+  <main class="main container">
+    <section class="content-container news-card-list news-card-list_hidden search-results">
+    </section>
+    <section class="content-container about">
+      <div class="about__img-container">
+
+        <picture class="main__avatar">
+          <source class="main__img" srcset="<%=require('@images/image-1.png').default%>" media="(min-width: 320px)" >
+          <source class="main__img" srcset="<%=require('@images/image-2.png').default%>" media="(max-width: 768px)" >
+          <img class="main__img" src="<%=require('@images/i_am.jpg').default%>" alt="фото автора">
+        </picture>
+      </div>
+      <div class="about__info">
+        <h2 class="section-title about__title">Об авторе</h2>
+        <p class="about__text">
+          Это блок с описанием автора проекта.
+          Здесь следует указать, как вас зовут, чем вы занимаетесь, какими
+          технологиями разработки владеете.
+          Также можно рассказать о процессе
+          обучения в Практикуме, чему вы тут научились,
+          и чем можете помочь потенциальным заказчикам.
+        </p>
+
+      </div>
+    </section>
+  </main>
+
+    <!-- Подвал -->
+
+  <footer class="container content-container footer">
+    <p class="footer__copy">&copy; 2020 Supersite, Powered by News API</p>
+    <nav class="footer__nav">
+      <ul class="footer__nav-list">
+        <li class="footer__nav-item"><a class="footer__nav-item-link" href="/">Главная</a></li>
+        <li class="footer__nav-item">
+          <a class="footer__nav-item-link" href="https://praktikum.yandex.ru/" target="_blank">Яндекс.Практикум</a>
+        </li>
+      </ul>
+    </nav>
+    <ul class="footer__social">
+      <li class="footer__social-item">
+        <a href="https://github.com/MaximMaslovVik/Diplom-front-news" class="footer__social-item-link" target="_blank">
+          <img src="<%= require('@images/github-logo.svg').default %>" class="footer__social-icon" alt="GitHub">
+        </a>
+      </li>
+      <li class="footer__social-item">
+        <a href="https://www.facebook.com/DMax319" class="footer__social-item-link" target="_blank">
+          <img src="<%= require('@images/fb-logo.svg').default %>" class="footer__social-icon" alt="Facebook">
+        </a>
+      </li>
+    </ul>
+  </footer>
+
+
+  <div class="popup">
+    <div class="popup__container">
+      <span class="popup__close"></span>
+      <div class="popup__content"></div>
+    </div>
+  </div>
+
+  <template id="popup-login">
+    <div class="popup__login">
+      <h3 class="popup__title">Вход</h3>
+      <form class="popup__form" name="popupForm">
+        <fieldset class="popup__form-fields">
+          <div class="popup__form-field">
+            <h6 class="popup__form-input-title">Email</h6>
+            <input type="email" name="email" class="popup__form-input popup__form-input_email"
+                   pattern="[0-9a-zA-Z_-]+[@][0-9a-zA-Z_-]+[.][0-9a-zA-Z]+" placeholder="Введите email" required>
+            <p class="popup__form-error">Неправильный формат email</p>
+          </div>
+          <div class="popup__form-field">
+            <h6 class="popup__form-input-title">Пароль</h6>
+            <input type="password" name="password" class="popup__form-input popup__form-input_password" minlength="8"
+                   autocomplete="on" placeholder="Введите пароль" required>
+            <p class="popup__form-error">Минимум 8 символов</p>
+          </div>
+        </fieldset>
+        <p class="form-error popup__form-error popup__form-error_showed"></p>
+        <button class="button button_blue button_disabled popup__form-button" type="submit" disabled>Войти</button>
+      </form>
+      <div class="popup__footer">или <span class="popup__link">Зарегистрироваться</span></div>
+    </div>
+  </template>
+
+  <template id="popup-registration">
+    <div class="popup__registration">
+      <h3 class="popup__title">Регистрация</h3>
+      <form class="popup__form" name="popupForm">
+        <fieldset class="popup__form-fields">
+          <div class="popup__form-field">
+            <h6 class="popup__form-input-title">Email</h6>
+            <input type="email" name="email" class="popup__form-input popup__form-input_email"
+                   pattern="[0-9a-zA-Z_-]+[@][0-9a-zA-Z_-]+[.][0-9a-zA-Z]+" placeholder="Введите email" required>
+            <p class="popup__form-error popup__form-error_email">Неправильный формат email</p>
+          </div>
+          <div class="popup__form-field">
+            <h6 class="popup__form-input-title">Пароль</h6>
+            <input type="password" name="password" class="popup__form-input popup__form-input_password" minlength="8"
+                   autocomplete="on"
+                   placeholder="Введите пароль" required>
+            <p class="popup__form-error">Минимум 8 символов</p>
+          </div>
+          <div class="popup__form-field">
+            <h6 class="popup__form-input-title">Имя</h6>
+            <input type="text" name="name" class="popup__form-input popup__form-input_name"
+                   pattern="^[А-ЯЁ][а-яё]+(-[А-ЯЁ][а-яё]+)?$" placeholder="Ваше имя" required>
+            <p class="popup__form-error">Должно начинаться с Заглавной буквы, от 2 до 20 символов, только
+              кириллица</p>
+          </div>
+        </fieldset>
+        <p class="form-error popup__form-error popup__form-error_showed"></p>
+        <button class="button button_blue popup__form-button" type="submit" disabled>
+          Зарегистрироваться
+        </button>
+      </form>
+      <div class="popup__footer">или <span class="popup__link">Войти</span></div>
+    </div>
+  </template>
+
+  <template id="popup-success-registration">
+    <div class="popup__success-registration">
+      <h3 class="popup__title">Пользователь успешно зарегистрирован!</h3>
+      <div class="popup__footer"><span class="popup__link popup__link_success-registration">Выполнить вход</span></div>
+    </div>
+  </template>
+
+  <template id="header-nav-light-not-logged-in">
+    <div class="header__nav-box">
+      <div class="content-container">
+        <h1 class="header__logo header__logo_light"><a href="/" class="header__logo-link">Мои новости</a></h1>
+        <input class="header__nav-switcher" id="header-nav-switcher" type="checkbox">
+        <label class="header__nav-switcher-label header__nav-switcher-label_open" for="header-nav-switcher"></label>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-list-logo"><a href="/" class="header__logo-link">Мои новости</a></li>
+            <li class="header__nav-item header__nav-item_active"><a class="header__nav-item-link" href="/">Главная</a>
+            </li>
+            <li class="header__nav-item">
+              <button class="button button_transparent header__nav-item-button">Авторизоваться</button>
+            </li>
+          </ul>
+          <label class="header__nav-switcher-label header__nav-switcher-label_close" for="header-nav-switcher"></label>
+        </nav>
+      </div>
+    </div>
+  </template>
+
+  <template id="header-nav-light-logged-in">
+    <div class="header__nav-box">
+      <div class="content-container">
+        <h1 class="header__logo header__logo_light"><a href="/" class="header__logo-link">Мои новости</a></h1>
+        <input class="header__nav-switcher" id="header-nav-switcher" type="checkbox">
+        <label class="header__nav-switcher-label header__nav-switcher-label_open" for="header-nav-switcher"></label>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-list-logo"><a href="/" class="header__logo-link">Мои новости</a></li>
+            <li class="header__nav-item header__nav-item_active"><a class="header__nav-item-link" href="/">Главная</a>
+            </li>
+            <li class="header__nav-item"><a class="header__nav-item-link" href="/saved">Сохранённые статьи</a></li>
+            <li class="header__nav-item">
+              <button class="button button_transparent header__nav-item-button">
+                <span class="header__nav-item-name"></span>
+                <i class="header__nav-item-button-icon"></i>
+              </button>
+            </li>
+          </ul>
+          <label class="header__nav-switcher-label header__nav-switcher-label_close" for="header-nav-switcher"></label>
+        </nav>
+      </div>
+    </div>
+  </template>
+
+  <template id="search-results">
+    <h2 class="section-title search-results__title">Результаты поиска</h2>
+    <div class="search-results__items"></div>
+    <button class="button button_white show-me-more">Показать еще</button>
+  </template>
+  <template id="search-in-process">
+    <i class="preloader search-results__loader"></i>
+    <p class="search-results__loader-text">Идет поиск новостей...</p>
+  </template>
+  <template id="search-no-results">
+    <i class="search-results__no-results-icon"></i>
+    <h3 class="search-results__no-results-title">Ничего не найдено</h3>
+    <p class  ="search-results__no-results-text">К сожалению по вашему запросу ничего не найдено.</p>
+  </template>
+  <template id="search-error">
+    <i class="search-results__no-results-icon"></i>
+    <h3 class="search-results__no-results-title">Ошибочка вышла</h3>
+    <p class="search-results__no-results-text">Во время запроса произошла ошибка. Возможно, проблема с соединением или
+      сервер недоступен. Подождите немного и попробуйте ещё раз.</p>
+  </template>
+
+  <template id="news-card">
+    <article class="news-card">
+      <img class="news-card__img"
+           src=""
+           alt=""/>
+      <div class="news-card__action-container"></div>
+      <div class="news-card__content">
+        <h5 class="news-card__date"></h5>
+        <h3 class="news-card__title"></h3>
+        <p class="news-card__text"></p>
+      </div>
+      <h4 class="news-card__source"></h4>
+    </article>
+  </template>
+
+  <template id="news-card-base-action">
+    <a href="" target="_blank" class="news-card__link"></a>
+    <div class="news-card__bookmark">
+      <div class="news-card__bookmark-icon news-card__bookmark-icon_unmarked"></div>
+      <div class="news-card__auth-tooltip">
+        <p class="news-card__auth-tooltip-message">Войдите, чтобы сохранять статьи</p>
+      </div>
+    </div>
+  </template>
+  <template id="news-card-like-action">
+    <a href="" target="_blank" class="news-card__link"></a>
+    <div class="news-card__bookmark">
+      <div class="news-card__bookmark-icon news-card__bookmark-icon_unmarked news-card__action"></div>
+    </div>
+  </template>
+  <template id="news-card-unlike-action">
+    <a href="" target="_blank" class="news-card__link"></a>
+    <div class="news-card__bookmark">
+      <div class="news-card__bookmark-icon news-card__bookmark-icon_marked news-card__action"></div>
+    </div>
+  </template>
+  <template id="news-card-saved-action">
+    <a href="" target="_blank" class="news-card__link"></a>
+    <span class="news-card__tag">Природа</span>
+    <span class="news-card__trash news-card__action"></span>
+  </template>
+</div>
+<script type="module" src="<%= htmlWebpackPlugin.files.chunks.index.entry %>"></script>
+</body>
+</html>
