@@ -1,0 +1,11 @@
+.search-results__no-results-icon {
+  display: block;
+
+  width: 96px;
+  height: 96px;
+
+  margin: 0 auto;
+  padding: 0;
+
+  background: url(../../../images/search-no-results.svg);
+}

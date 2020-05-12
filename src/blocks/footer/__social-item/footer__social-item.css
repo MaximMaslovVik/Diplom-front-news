@@ -1,0 +1,8 @@
+.footer__social-item {
+  margin: 0;
+  padding: 0;
+}
+
+.footer__social-item:nth-child(2) {
+  margin-left: 24px;
+}

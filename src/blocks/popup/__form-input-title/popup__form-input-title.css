@@ -1,0 +1,10 @@
+.popup__form-input-title {
+  margin: 12px 0 0 0;
+
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #2f71e5;
+}

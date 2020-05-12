@@ -1,0 +1,14 @@
+@import url(./_success-registration/popup__link_success-registration.css);
+
+.popup__link {
+  text-decoration: none;
+  color: #2f71e5;
+
+  cursor: pointer;
+
+  transition: opacity .1s ease-in;
+}
+
+.popup__link:hover {
+  opacity: .5;
+}

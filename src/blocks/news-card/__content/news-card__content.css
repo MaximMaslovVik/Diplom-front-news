@@ -1,0 +1,27 @@
+.news-card__content {
+  box-sizing: border-box;
+  position: relative;
+
+  width: 100%;
+  /* Общая высота - картинка - отступ до источника - высота источника - отступ источника от нижнего края */
+  height: calc(100% - 272px - 10px - 24px - 24px);
+
+  padding: 0 24px;
+
+  overflow: hidden;
+}
+
+@media screen and (max-width: 900px) {
+  .news-card__content {
+    /* Общая высота - картинка - отступ до источника - высота источника - отступ источника от нижнего края */
+    height: calc(100% - 150px - 12px - 24px - 16px);
+    padding: 0 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .news-card__content {
+    /* Общая высота - картинка - отступ до источника - высота источника - отступ источника от нижнего края */
+    height: calc(100% - 196px - 8px - 20px - 16px);
+  }
+}

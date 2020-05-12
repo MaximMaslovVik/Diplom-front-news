@@ -1,0 +1,40 @@
+.news-card__trash {
+  display: flex;
+  box-sizing: border-box;
+  position: absolute;
+
+  width: 40px;
+  height: 40px;
+
+  padding: 13px 12px;
+
+  top: 24px;
+  right: 24px;
+
+  box-shadow: 0 10px 22px rgba(59, 74, 116, 0.1);
+  border-radius: 10px;
+
+  background: #fff url(../../../images/trash-icon.svg) center center no-repeat;
+
+  cursor: pointer;
+
+  z-index: 99;
+}
+
+.news-card__trash:hover {
+  background: #fff url(../../../images/trash-icon-active.svg) center center no-repeat;
+}
+
+@media screen and (max-width: 900px) {
+  .news-card__trash {
+    top: 8px;
+    right: 8px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .news-card__trash {
+    top: 16px;
+    right: 16px;
+  }
+}

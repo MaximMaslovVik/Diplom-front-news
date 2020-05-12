@@ -1,0 +1,9 @@
+.header__nav-item-button-icon_dark {
+  background-image: url(../../../../images/logout-icon-dark.svg);
+}
+
+@media screen and (max-width: 767px) {
+  .header__nav-item-button-icon_dark {
+    background-image: url(../../../../images/logout-icon.svg);
+  }
+}

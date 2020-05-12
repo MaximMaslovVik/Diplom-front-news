@@ -1,0 +1,21 @@
+.button_white {
+  background: #fff;
+  border: none;
+  color: #1a1b22;
+
+  transition: all;
+
+  cursor: pointer;
+}
+
+.button_white:hover {
+  opacity: 0.9;
+}
+
+.button_white:active {
+  opacity: 0.9;
+}
+
+.button_white:focus {
+  box-shadow: 0 0 5px #b2b2b2;
+}

@@ -1,0 +1,13 @@
+@import url(./__items/saved-results__items.css);
+
+.saved-results {
+  padding-top: 62px;
+  padding-bottom: 62px;
+}
+
+@media screen and (max-width: 900px) {
+  .saved-results {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}

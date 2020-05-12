@@ -3,219 +3,145 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-  <meta name="description" content="Мои новости - дипломная работа "/>
-  <meta name="author" content="Maslov Maxim"/>
-  <link rel="shortcut icon" href="<%=require('./images/favicon.png').default%>" type="image/x-icon"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>News Explorer</title>
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
-  <link rel="stylesheet" href="./pages/style.css">
-  <title>Мои новости - главная</title>
 </head>
 <body>
-
-<div class="page">
-  <!-- Шапка -->
-  <header class="header">
-    <div class="header__background">
-      <nav class="header__navigation">
-        <a href="./index.html" class="header__logo">
-          NewsExplorer
-        </a>
-        <div class="header__popup-mobile">
-          <div class="header__menu-mobile-upper">
-            <a href="./index.html" class="header__logo">
-            NewsExplorer
-            </a>
-            <img src="<%=require('./images/close.png').default%>" alt="" class="header__popup-mobile-close">
+  <div class="root">
+    
+    <div class="header header_opened header_opened-pozition">
+      <a class="header__logo" href="/">NewsExplorer</a>
+      <div class="header__controls">
+        <div class="header__auth">
+          <div class="icon-button">
+            <span class="icon-button__text">Авторизоваться</span>
+            <img class="icon-button__icon header_logged-only" src="<%=require('./images/logout.svg')%>" alt="logout">
           </div>
-        <div class="header__container">
-          <div class="header__menu">
-            <a href="./index.html" class="header__main">
-              Главная
-            </a>
-            <a href="./secondary.html" class="header__saved-articles header__saved-articles_is-opened">
-              Сохранённые статьи
-            </a>
-          </div>
-          <button class="header__auth header__auth_is-opened">
-            Авторизоваться
-          </button>
-          <button class="header__auth-logged-in header__auth-logged-in_is-opened">
-            <span class="header__auth-name">
-            </span>
-            <span class="header__auth-icon">
-            </span>
-          </button>
         </div>
-        </div>
-      <img class="header__menu-mobile" src="<%=require('./images/navigation__menu-mobile.png').default%>" alt="меню">
-      </nav>
-
-    <section class="header__info">
-      <h1 class="header__title">
-        Что в мире творится?
-      </h1>
-      <p class="header__description">
-        Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.
-      </p>
-      <form class="header__container-search" name= "search">
-        <input class="header__search" required="" type="text" name="keyword" class="search__input"
-        placeholder="Введите тему новости" oninvalid="setCustomValidity('Нужно ввести ключевое слово')"
-        oninput="setCustomValidity('')">
-        <button class="header__button">Искать</button>
-      </form>
+        <ul class="header__navigation">
+          <li class="header__navigation-item header__navigation-item_current-page">
+            <a class="header__link" href="/">Главная</a>
+          </li>
+          <li class="header__navigation-item header_logged-only">
+            <a class="header__link" href="/saved-articles.html">Сохранённые статьи</a>
+          </li>
+        </ul>
+      </div>
+      <button class="header__menu"></button>
+    </div>
+    <section class="search">
+      <div class="search__header search__header_pozition">
+        <a class="search_link" href="/">NewsExplorer</a>
+        <button class="news_list news_listOpen"></button>
+      </div>
+      <div class="search__content">
+        <h1 class="search__title">Что в мире творится?</h1>
+        <p class="search__description">Находите самые свежие статьи на любую тему и сохраняйте в своём личном кабинете.</p>
+        <form class="search__controls">
+          <input class="search__input" placeholder="Введите тему новости" name="searchValue" required>
+          <button class="search__submit page__button" type="submit">Искать</button>
+        </form>
+      </div>
     </section>
-  </div>
-  </header>
-
-  <div class="popup popup-signin">
-    <div class="popup__content popup__content-signin">
-      <img src="<%=require('./images/close.png').default%>" alt="" class="popup__close popup__close_signin">
-      <h3 class="popup__title">Вход
-      </h3>
-      <form class="popup__form" name="signin">
-        <p class="popup__text-email">Email
+    <section class="search-result page__element_hidden">
+      <div class="search-result__found-field page__element_hidden">
+        <h2 class="page__subtitle">Результаты поиска</h2>
+        <div class="search-result__cards">
+          <div class="card-list">
+          </div>
+        </div>
+        <div class="search-result__controls">
+          <button class="search-result__show-more-btn page__button page__button_theme_grey">Показать еще</button>
+        </div>
+      </div>
+      <div class="search-result__searching-field page__element_hidden">
+        <i class="circle-preloader"></i>
+        <p class="search-result__searching-description">Идет поиск новостей...</p>
+      </div>
+      <div class="search-result__empty-res-field  page__element_hidden">
+        <img src="<%=require('./images/not-found-icon.svg')%>" alt="Search with no result">
+        <h3 class="search-result__empty-res-title">Ничего не найдено</h3>
+        <p class="search-result__empty-res-text">
+          К сожалению по вашему запросу ничего не найдено.
         </p>
-        <input type="email" name="email" class="popup__input-type popup__input-type_email" pattern="^[A-Za-z]((\.|-)?[A-Za-z0-9]+)+@[A-Za-z0-9](-?[A-Za-z0-9]+)+(\.[A-Za-z]{2,})+$" placeholder="Введите почту">
-        <span class="popup__error popup__error_email">Неправильный формат email
-        </span>
-        <p class="popup__text-password-signin">Пароль
-        </p>
-        <input type="password" name="password" class="popup__input-type popup__input-type_password" pattern="^(?=.*[A-Z].*[A-Z])(?=.*[!@#$&*])(?=.*[0-9].*[0-9])(?=.*[a-z].*[a-z].*[a-z]).{8,}$" placeholder="Введите пароль">
-        <span class="popup__error popup__error_password">
-        </span>
-        <button class="button popup__button popup__button_signin popup__button_disabled">Войти
+      </div>
+    </section>
+    <section class="about">
+      <img class="about__image" src="<%=require('./blocks/about/images/image-03.png')%>" alt="image-author">
+      <div class="about__text">
+        <h3 class="about__author">Об авторе</h3>
+        <div class="about__paragraph">
+          <p class="about__title-one">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.</p>
+          <p class="about__title-two about__title_margin">Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
+        </div>
+      </section>
+    <footer class="footer">
+      <p class="footer__info">&copy; 2020 Supersite, Powered by News API</p>
+      <div class="footer__column">
+        <a class="footer__column-text footer__column-text_header" href="index.html">Главная</a>
+        <a class="footer__column-text footer__column-text_link" href="https://praktikum.yandex.ru">Яндекс.Практикум</a>
+        <a class="footer__column-icone footer__column-icone_github" href="https://github.com/abramson21"></a>
+        <a class="footer__column-icone footer__column-icone_facebook" href="https://facebook.com"></a>
+      </div>
+    </footer>
+    <template id="login-popup">
+      <h3 class="popup__title">Вход</h3>
+      <form class="form login-form">
+        <div class="input form__element">
+          <span class="input__label">Email</span>
+          <input class="input__text-field" pattern="^[a-zA-Z0-9.!#$%&'*+=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" name="email" placeholder="Введите почту" required>
+          <span class="input__error page__error-message">Неправильный формат email</span>
+        </div>
+        <div class="input form__element">
+          <span class="input__label">Пароль</span>
+          <input class="input__text-field" name="password" type="password" placeholder="Введите пароль" required>
+          <span class="input__error page__error-message">Неправильный пароль</span>
+        </div>
+        <button class="page__button form__submit" type="submit">
+          <span>Войти</span>
+          <span class="form__error page__error-message page__element_hidden">Неверные данные для входа</span>
         </button>
       </form>
+      <span class="login-popup__register">
+        <span>или </span>
+        <button class="page__text-button">Зарегистрироваться</button>
       </span>
-      <p class="popup__text-and">или
-        <span class="popup__url-signup">
-          Зарегистрироваться
-        </span>
-      </p>
-    </div>
+    </template>
+    <template id="register-popup">
+      <h3 class="popup__title">Регистрация</h3>
+      <form class="form register-form">
+        <div class="input form__element">
+          <span class="input__label">Email</span>
+          <input pattern="^[a-zA-Z0-9.!#$%&'*+=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" class="input__text-field" name="email" placeholder="Введите почту" required>
+          <span class="input__error page__error-message page__element_hidden">Неправильный формат email</span>
+        </div>
+        <div class="input form__element">
+          <span class="input__label">Пароль</span>
+          <input
+            class="input__text-field" name="password" type="password" placeholder="Введите пароль" required>
+          <span class="input__error page__error-message page__element_hidden">Неправильный пароль</span>
+        </div>
+        <div class="input form__element">
+          <span class="input__label">Имя</span>
+          <input class="input__text-field" name="name" placeholder="Введите своё имя" minlength="2" maxlength="30" required>
+          <span class="input__error page__error-message page__element_hidden">Неправильный формат имени</span>
+        </div>
+        <button class="page__button form__submit" type="submit">
+          <span>Зарегистрироваться</span>
+          <span class="form__error page__error-message page__element_hidden">Такой пользователь уже есть</span>
+        </button>
+      </form>
+      <span class="login-popup__register">
+        <span>или </span>
+        <button class="page__text-button">Войти</button>
+      </span>
+    </template>
+    <template id="register-success-popup">
+      <h3 class="register-success-popup__title popup__title">Пользователь успешно зарегистрирован!</h3>
+      <button class="register-success-popup__login page__text-button">Выполнить вход</button>
+    </template>
   </div>
-
-  <div class="popup popup-signup">
-      <div class="popup__content popup__content-signup">
-        <img src="<%=require('./images/close.png').default%>" alt="" class="popup__close popup__close_signup">
-        <h3 class="popup__title">Регистрация
-        </h3>
-        <form class="popup__form" name="signup" >
-          <p class="popup__text-email">Email
-          </p>
-          <input type="email" name="email" class="popup__input-type popup__input-type_email"
-            pattern="^[A-Za-z]((\.|-)?[A-Za-z0-9]+)+@[A-Za-z0-9](-?[A-Za-z0-9]+)+(\.[A-Za-z]{2,})+$"
-            placeholder="Введите почту">
-          <span class="popup__error popup__error_email">
-          </span>
-          <p class="popup__text-password">Пароль
-          </p>
-          <input type="password" name="password" class="popup__input-type popup__input-type_password"
-          pattern="^(?=.*[A-Z].*[A-Z])(?=.*[!@#$&*])(?=.*[0-9].*[0-9])(?=.*[a-z].*[a-z].*[a-z]).{8,}$"
-          placeholder="Введите пароль">
-          <span class="popup__error popup__error_password">
-          </span>
-          <p class="popup__text-name">Имя
-          </p>
-          <input type="text" name="name" class="popup__input-type popup__input-type_name"
-            minlength="2" maxlength="20" pattern="^([А-ЯЁ]{1}[а-яё]+)(-[А-ЯЁ]{1}[а-яё]+)?$"
-            placeholder="Введите своё имя">
-          <span class="popup__error popup__error_name">
-          </span>
-          <span class="popup__error popup__error_duplicate">
-            Такой пользователь уже есть
-          </span>
-          <button class="button popup__button popup__button_signup popup__button_disabled">
-            Зарегистрироваться
-          </button>
-        </form>
-        <p class="popup__text-and">
-          или
-          <span class="popup__url-signin">
-            Войти
-          </span>
-        </p>
-      </div>
-    </div>
-
-    <div class="popup popup-success">
-      <div class="popup__content-success">
-        <img src="<%=require('./images/close.png').default%>" alt="" class="popup__close popup__close_successful-signup">
-        <h3 class="popup__title-success">
-          Пользователь успешно зарегистрирован!
-        </h3>
-        <span class="popup__url-signin-success">
-          Выполнить вход
-        </span>
-      </div>
-    </div>
-
-  <section class="preloader">
-    <div class="preloader-container">
-      <i class="preloader-circle">
-      </i>
-      <h3 class="preloader__text">
-        Идет поиск новостей...
-      </h3>
-    </div>
-  </section>
-
-  <section class="not-found">
-    <div class="not-found-container">
-      <div class="not-found__img">
-      </div>
-      <h3 class="not-found__title not-found__title_is-opened">
-        Ничего не найдено
-      </h3>
-      <p class="not-found__text">
-        К сожалению по вашему запросу ничего не найдено.
-      </p>
-    </div>
-  </section>
-
-  <section class="results">
-    <h3 class="results__title">Результаты поиска</h3>
-    <div class="results__list results__list_favorites"></div>
-    <button class="results__more-button results__more-button_is-opened">Показать еще
-    </button>
-  </section>
-
-  <!-- Основная информация об авторе -->
-  <main class="main">
-    <picture class="main__avatar">
-      <source class="main__img" srcset="<%=require('./images/image-1.png').default%>" media="(min-width: 320px)" >
-      <source class="main__img" srcset="<%=require('./images/image-2.png').default%>" media="(max-width: 768px)" >
-      <img class="main__img" src="<%=require('./images/avatar-sample.png').default%>" alt="фото автора">
-    </picture>
-    <div class="main__container">
-      <h2 class="main__title">
-        Об авторе
-      </h2>
-      <p class="main__description">
-        Это блок с описанием автора проекта.
-        Здесь следует указать, как вас зовут, чем вы занимаетесь, какими
-        технологиями разработки владеете.
-        Также можно рассказать о процессе
-        обучения в Практикуме, чему вы тут научились,
-        и чем можете помочь потенциальным заказчикам.
-      </p>
-    </div>
-  </main>
-
-    <!-- Подвал -->
-    <footer class="footer">
-      <p class="footer__author">&copy; 2020 Supersite, Powered by News API</p>
-      <a class="footer__main" href="./index.html">Главная</a>
-      <a class="footer__ya-praktikum" href="https://praktikum.yandex.ru/" target="_blank">Яндекс.Практикум</a>
-      <a class="footer__github-url" href="https://github.com/MaximMaslovVik/Diplom-front-news/tree/level-2" target="_blank">
-        <img class="footer__github-img" src="./images/github.png" alt="github">
-      </a>
-      <a class="footer__fb-url" href="https://www.facebook.com/DMax319" target="_blank">
-        <img class="footer__fb-img" src="./images/fb-icon.png" alt="Facebook">
-      </a>
-    </footer>
-</div>
   <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>
 </html>

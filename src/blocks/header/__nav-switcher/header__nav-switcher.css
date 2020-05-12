@@ -1,0 +1,5 @@
+.header__nav-switcher {
+  position: absolute;
+  visibility: hidden;
+  left: -9999px;
+}

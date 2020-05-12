@@ -1,0 +1,17 @@
+.search-results__no-results-text {
+  display: block;
+
+  width: 100%;
+  max-width: 286px;
+
+  margin: 16px auto 10px auto;
+  padding: 0;
+
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #b6bcbf;
+}
