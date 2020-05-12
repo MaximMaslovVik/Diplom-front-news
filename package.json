@@ -1,12 +1,15 @@
 {
   "name": "diplom-front",
   "version": "1.0.1",
-  "description": "diplom-front",
-  "main": "index.js",
-  "articles": "secondary.js",
+  "description": "diplom-front-js",
+  "index": "./src/pages/index/index.js",
+  "saved": "./src/pages/saved/index.js",
+
   "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --mode development --open --watch",
     "build": "cross-env NODE_ENV=production rimraf dist && webpack --mode production",
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --mode development --open --watch"
+    "deploy": "cross-env NODE_ENV=production gh-pages -d dist",
+    "deployme": "cross-env NODE_ENV=production npm run build && scp -r ./dist/* max@84.201.146.193:/home/max/news-frontend"
   },
   "repository": {
     "type": "git",
@@ -46,6 +49,7 @@
     "babel-polyfill": "6.26.0",
     "core-js": "3.1.4",
     "cssnano": "4.1.10",
-    "path": "0.12.7"
+    "path": "0.12.7",
+    "validator": "12.2.0"
   }
 }
