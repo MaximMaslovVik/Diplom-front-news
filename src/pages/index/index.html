@@ -40,21 +40,17 @@
 
     <!-- Основная информация об авторе -->
 
-  <main class="main container">
-    <section class="content-container news-card-list news-card-list_hidden search-results">
-    </section>
-    <section class="content-container about">
-      <div class="about__img-container">
-
-        <picture class="main__avatar">
-          <source class="main__img" srcset="<%=require('@images/image-1.png').default%>" media="(min-width: 320px)" >
-          <source class="main__img" srcset="<%=require('@images/image-2.png').default%>" media="(max-width: 768px)" >
-          <img class="main__img" src="<%=require('@images/i_am.jpg').default%>" alt="фото автора">
-        </picture>
-      </div>
-      <div class="about__info">
-        <h2 class="section-title about__title">Об авторе</h2>
-        <p class="about__text">
+    <main class="main">
+      <picture class="main__avatar">
+        <source class="main__img" srcset="<%=require('@images/image-1.png').default%>" media="(min-width: 320px)" >
+        <source class="main__img" srcset="<%=require('@images/image-2.png').default%>" media="(max-width: 768px)" >
+        <img class="main__img" src="<%=require('@images/avatar-sample.png').default%>" alt="фото автора">
+      </picture>
+      <div class="main__container">
+        <h2 class="main__title">
+          Об авторе
+        </h2>
+        <p class="main__description">
           Это блок с описанием автора проекта.
           Здесь следует указать, как вас зовут, чем вы занимаетесь, какими
           технологиями разработки владеете.
@@ -62,10 +58,8 @@
           обучения в Практикуме, чему вы тут научились,
           и чем можете помочь потенциальным заказчикам.
         </p>
-
       </div>
-    </section>
-  </main>
+    </main>
 
     <!-- Подвал -->
 
