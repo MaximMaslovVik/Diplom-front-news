@@ -1,0 +1,6 @@
+@media (min-width: 768px) {
+  .header__saved-articles_black {
+    color: #1a1b22;
+    border-bottom: 3px solid #1a1b22;
+  }
+}

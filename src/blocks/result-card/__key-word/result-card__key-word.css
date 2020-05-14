@@ -1,0 +1,25 @@
+.result-card__key-word {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  font-family: 'Roboto', 'Verdana';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  text-align: center;
+  padding: 8px 12px;
+  margin: 24px 0px 0px 24px;
+}
+
+@media (max-width: 1024px) {
+  .result-card__key-word {
+    margin: 16px 0px 0px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .result-card__key-word {
+    margin: 8px 0px 0px 8px;
+  }
+}

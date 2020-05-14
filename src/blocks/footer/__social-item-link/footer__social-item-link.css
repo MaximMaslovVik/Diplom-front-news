@@ -1,0 +1,12 @@
+.footer__social-item-link {
+  display: block;
+  height: 24px;
+
+  outline: none;
+
+  transition: all .1s ease-in;
+}
+
+.footer__social-item-link:focus {
+  opacity: .8;
+}

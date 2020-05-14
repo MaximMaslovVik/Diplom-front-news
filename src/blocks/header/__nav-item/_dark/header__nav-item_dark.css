@@ -1,0 +1,13 @@
+.header__nav-item_dark {
+  color: #1a1b22;
+}
+
+.header__nav-item_dark:hover {
+  color: #1a1b22;
+}
+
+@media screen and (max-width: 767px) {
+  .header__nav-item_dark {
+    color: #fff;
+  }
+}

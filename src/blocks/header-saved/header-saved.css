@@ -1,0 +1,9 @@
+@import url(./__title/header-saved__title.css);
+@import url(./__subtitle/header-saved__subtitle.css);
+@import url(./__details/header-saved__details.css);
+@import url(./__detail-tag/header-saved__detail-tag.css);
+
+.header-saved {
+  flex-direction: column;
+  align-items: flex-start;
+}

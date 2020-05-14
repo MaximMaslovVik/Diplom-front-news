@@ -1,0 +1,30 @@
+.news-card__auth-tooltip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+
+  width: 182px;
+  height: 40px;
+
+  right: 45px;
+  top: 0;
+
+  background: #fff;
+  box-shadow: 0 10px 22px rgba(59, 74, 116, 0.1);
+  border-radius: 10px;
+
+  opacity: 0;
+
+  transition: opacity .25s ease-in;
+}
+
+.news-card__bookmark-icon:hover ~ .news-card__auth-tooltip {
+  opacity: 1;
+}
+
+@media screen and (max-width: 900px) {
+  .news-card__auth-tooltip {
+    width: 164px;
+  }
+}

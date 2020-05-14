@@ -1,0 +1,24 @@
+.header-saved__title {
+  margin: 40px 0 0 0;
+
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(26, 27, 34, 0.5);
+}
+
+@media screen and (max-width: 900px) {
+  .header-saved__title {
+    margin: 24px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .header-saved__title {
+    margin: 8px 0 0 0;
+
+    font-size: 12px;
+  }
+}

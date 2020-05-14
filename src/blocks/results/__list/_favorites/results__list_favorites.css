@@ -1,0 +1,9 @@
+.results__list_favorites {
+  padding: 52px 0px;
+}
+
+@media (max-width: 617px) {
+  .results__list_favorites {
+    padding: 0px 0px 24px;
+  }
+}

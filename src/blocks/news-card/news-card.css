@@ -1,0 +1,54 @@
+@import url(./__img/news-card__img.css);
+@import url(./__bookmark/news-card__bookmark.css);
+@import url(./__auth-tooltip/news-card__auth-tooltip.css);
+@import url(./__auth-tooltip-message/news-card__auth-tooltip-message.css);
+@import url(./__bookmark-icon/news-card__bookmark-icon.css);
+@import url(./__content/news-card__content.css);
+@import url(./__date/news-card__date.css);
+@import url(./__title/news-card__title.css);
+@import url(./__text/news-card__text.css);
+@import url(./__source/news-card__source.css);
+@import url(./__tag/news-card__tag.css);
+@import url(./__trash/news-card__trash.css);
+@import url(./__link/news-card__link.css);
+@import url(./__action-container/news-card__action-container.css);
+
+.news-card {
+  position: relative;
+
+  max-width: 100%;
+  height: 576px;
+
+  border-radius: 16px;
+
+  background: #fff;
+
+  cursor: pointer;
+
+  overflow: hidden;
+
+  transition: box-shadow .25s ease-in;
+}
+
+.news-card:hover {
+  box-shadow: 0 5px 10px rgba(8, 29, 45, 0.1);
+}
+
+@media screen and (max-width: 900px) {
+  .news-card {
+    height: 420px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .news-card {
+    height: 440px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .news-card {
+    min-width: 288px;
+    max-width: 340px;
+  }
+}

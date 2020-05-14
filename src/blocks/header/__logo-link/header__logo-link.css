@@ -1,0 +1,12 @@
+.header__logo-link {
+  text-decoration: none;
+  color: inherit;
+
+  outline: none;
+
+  transition: opacity .1s ease-in;
+}
+
+.header__logo-link:focus {
+  opacity: .8;
+}

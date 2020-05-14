@@ -1,0 +1,23 @@
+.header-search__button {
+  position: absolute;
+
+  width: 168px;
+  height: 64px;
+
+  right: 0;
+  top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .header-search__button {
+    width: 160px;
+    height: 56px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .header-search__button {
+    position: relative;
+    width: 100%;
+  }
+}

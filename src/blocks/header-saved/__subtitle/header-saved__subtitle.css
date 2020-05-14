@@ -1,0 +1,16 @@
+.header-saved__subtitle {
+  max-width: 530px;
+  margin: 28px 0 0 0;
+}
+
+@media screen and (max-width: 900px) {
+  .header-saved__subtitle {
+    margin: 16px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .header-saved__subtitle {
+    line-height: 34px;
+  }
+}

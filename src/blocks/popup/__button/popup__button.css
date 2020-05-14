@@ -6,7 +6,6 @@
     margin-left: 16px;
     margin-right: 16px;
 
-    background: #e6e8eb;
     border-radius: 100px;
     border: none;
     cursor: pointer;
@@ -17,7 +16,8 @@
     font-size: 18px;
     line-height: 24px;
 
-    color: #b6bcbf;
+    color: #fff;
+    background: #2f71e5;
     }
   }
 
@@ -29,7 +29,6 @@
     margin-left: 36px;
     margin-right: 36px;
 
-    background: #e6e8eb;
     border-radius: 100px;
     border: none;
     cursor: pointer;
@@ -40,6 +39,7 @@
     font-size: 18px;
     line-height: 24px;
 
-    color: #B6BCBF;
+    color: #fff;
+    background: #2f71e5;
   }
 }

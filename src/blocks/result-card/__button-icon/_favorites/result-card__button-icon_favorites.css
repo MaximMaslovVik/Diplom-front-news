@@ -1,0 +1,13 @@
+.result-card__button-icon_favorites {
+  background-image: url(../../../../images/trash.svg);
+  box-sizing: border-box;
+  border: none;
+  width: 24px;
+  height: 24px;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.result-card__button-icon_favorites:hover {
+  background-image: url(../../../../images/trash_hover.svg);
+}

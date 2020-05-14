@@ -1,0 +1,16 @@
+.footer__nav-item-link {
+  text-decoration: none;
+  color: inherit;
+
+  outline: none;
+
+  transition: all .1s ease-in;
+}
+
+.footer__nav-item-link:hover {
+  opacity: .9;
+}
+
+.footer__nav-item-link:focus {
+  opacity: .8;
+}

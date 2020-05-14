@@ -1,10 +1,45 @@
 {
+  "globals": {
+    "window": true,
+    "document": true,
+    "fetch": true
+  },
   "extends": "airbnb-base",
   "rules": {
-    "no-underscore-dangle": ["error", { "allow": ["_id"], "enforceInMethodNames": false, "allowAfterThis": true }]
-    },
-  "env": {
-      "browser": true,
-      "node": true
+    "no-underscore-dangle": [
+      "error",
+      {
+        "allowAfterThis": true,
+        "allow": [
+          "_id",
+          "_closeForm"
+        ]
+      }
+    ],
+    "class-methods-use-this": [
+      "error",
+      {
+        "exceptMethods": [
+          "_validateInputElement",
+          "_popupLinkClick",
+          "_submitForm",
+          "_getCardDate",
+          "isSavedPage"
+        ]
+      }
+    ],
+    "arrow-parens": [
+      "error",
+      "as-needed"
+    ],
+    "no-param-reassign": [
+      "error",
+      {
+        "props": true,
+        "ignorePropertyModificationsFor": [
+          "words"
+        ]
+      }
+    ]
   }
 }

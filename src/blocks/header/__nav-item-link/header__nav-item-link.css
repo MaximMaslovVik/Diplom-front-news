@@ -1,0 +1,21 @@
+.header__nav-item-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+
+  outline: none;
+
+  transition: opacity .1s ease-in;
+}
+
+.header__nav-item-link:focus {
+  opacity: .8;
+}
+
+@media screen and (max-width: 767px) {
+  .header__nav-item-link {
+    box-sizing: border-box;
+    padding: 16px 16px;
+    width: 100%;
+  }
+}

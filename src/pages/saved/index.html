@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <meta name="description" content="Мои новости - дипломная работа "/>
+  <meta name="author" content="Maslov Maxim"/>
+  <link rel="icon" href="../<%= require('@images/favicon.ico').default %>" type="image/x-icon"/>
+  <link rel="shortcut icon" href="../<%= require('@images/favicon.ico').default %>" type="image/x-icon"/>
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.saved.css %>"/>
+  <title>Мои новости - сохраненные</title>
+</head>
+<body>
+<div class="root">
+
+    <!-- Шапка -->
+
+  <header class="header header_saved container">
+    <div class="header-nav-container"></div>
+    <section class="content-container header-saved">
+      <h2 class="header-saved__title">Сохранённые статьи</h2>
+      <p class="section-title header-saved__subtitle"><span class="header-saved__name">Максим</span>, у вас <span class="header-saved__articles-count">0</span>
+        сохранённых статей</p>
+      <p class="header-saved__details"></p>
+    </section>
+  </header>
+  <main class="main container">
+    <section class="content-container news-card-list news-card-list_hidden saved-results">
+      <div class="saved-results__items">
+      </div>
+    </section>
+  </main>
+
+    <!-- Подвал -->
+
+    <footer class="container content-container footer">
+      <p class="footer__copy">&copy; 2020 Supersite, Powered by News API</p>
+      <nav class="footer__nav">
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item"><a class="footer__nav-item-link" href="/">Главная</a></li>
+          <li class="footer__nav-item">
+            <a class="footer__nav-item-link" href="https://praktikum.yandex.ru/" target="_blank">Яндекс.Практикум</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="footer__social">
+        <li class="footer__social-item">
+          <a href="https://github.com/MaximMaslovVik/Diplom-front-news" class="footer__social-item-link" target="_blank">
+            <img src="<%= require('@images/github-logo.svg').default %>" class="footer__social-icon" alt="GitHub">
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a href="https://www.facebook.com/DMax319" class="footer__social-item-link" target="_blank">
+            <img src="<%= require('@images/fb-logo.svg').default %>" class="footer__social-icon" alt="Facebook">
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+  <template id="header-nav-light-not-logged-in">
+    <div class="header__nav-box">
+      <div class="content-container">
+        <h1 class="header__logo header__logo_light"><a href="/" class="header__logo-link">Мои новости</a></h1>
+        <input class="header__nav-switcher" id="header-nav-switcher" type="checkbox">
+        <label class="header__nav-switcher-label header__nav-switcher-label_open" for="header-nav-switcher"></label>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-list-logo"><a href="/" class="header__logo-link">Мои новости</a></li>
+            <li class="header__nav-item header__nav-item_active"><a class="header__nav-item-link" href="/">Главная</a>
+            </li>
+            <li class="header__nav-item">
+              <button class="button button_transparent header__nav-item-button">Авторизоваться</button>
+            </li>
+          </ul>
+          <label class="header__nav-switcher-label header__nav-switcher-label_close" for="header-nav-switcher"></label>
+        </nav>
+      </div>
+    </div>
+  </template>
+
+  <template id="header-nav-light-logged-in">
+    <div class="header__nav-box">
+      <div class="content-container">
+        <h1 class="header__logo header__logo_light"><a href="/" class="header__logo-link">Мои новости</a></h1>
+        <input class="header__nav-switcher" id="header-nav-switcher" type="checkbox">
+        <label class="header__nav-switcher-label header__nav-switcher-label_open" for="header-nav-switcher"></label>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-list-logo"><a href="/" class="header__logo-link">Мои новости</a></li>
+            <li class="header__nav-item header__nav-item_active"><a class="header__nav-item-link" href="/">Главная</a>
+            </li>
+            <li class="header__nav-item"><a class="header__nav-item-link" href="/saved">Сохранённые статьи</a></li>
+            <li class="header__nav-item">
+              <button class="button button_transparent header__nav-item-button">
+                <span class="header__nav-item-name"></span>
+                <i class="header__nav-item-button-icon"></i>
+              </button>
+            </li>
+          </ul>
+          <label class="header__nav-switcher-label header__nav-switcher-label_close" for="header-nav-switcher"></label>
+        </nav>
+      </div>
+    </div>
+  </template>
+
+  <template id="header-nav-dark-not-logged-in">
+    <div class="header__nav-box header__nav-box_dark">
+      <div class="content-container">
+        <h1 class="header__logo header__logo_dark"><a href="/" class="header__logo-link">Мои новости</a></h1>
+        <input class="header__nav-switcher" id="header-nav-switcher" type="checkbox">
+        <label class="header__nav-switcher-label header__nav-switcher-label_dark header__nav-switcher-label_open"
+               for="header-nav-switcher"></label>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-list-logo"><a href="/" class="header__logo-link">Мои новости</a></li>
+            <li class="header__nav-item header__nav-item_dark"><a class="header__nav-item-link" href="/">Главная</a>
+            </li>
+            <li class="header__nav-item header__nav-item_dark header__nav-item_active"><a class="header__nav-item-link"
+                                                                                          href="/saved">Сохранённые
+              статьи</a></li>
+            <li class="header__nav-item header__nav-item_dark">
+              <button class="button button_transparent header__nav-item-button header__nav-item-button_dark">
+                <span class="header__nav-item-name"></span>
+                <i class="header__nav-item-button-icon header__nav-item-button-icon_dark"></i>
+              </button>
+            </li>
+          </ul>
+          <label class="header__nav-switcher-label header__nav-switcher-label_close" for="header-nav-switcher"></label>
+        </nav>
+      </div>
+    </div>
+  </template>
+
+  <template id="header-nav-dark-logged-in">
+    <div class="header__nav-box header__nav-box_dark">
+      <div class="content-container">
+        <h1 class="header__logo header__logo_dark"><a href="/" class="header__logo-link">Мои новости</a></h1>
+        <input class="header__nav-switcher" id="header-nav-switcher" type="checkbox">
+        <label class="header__nav-switcher-label header__nav-switcher-label_dark header__nav-switcher-label_open"
+               for="header-nav-switcher"></label>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-list-logo"><a href="/" class="header__logo-link">Мои новости</a></li>
+            <li class="header__nav-item header__nav-item_dark"><a class="header__nav-item-link" href="/">Главная</a>
+            </li>
+            <li class="header__nav-item header__nav-item_dark header__nav-item_active"><a class="header__nav-item-link"
+                                                                                          href="/saved">Сохранённые
+              статьи</a></li>
+            <li class="header__nav-item header__nav-item_dark">
+              <button class="button button_transparent header__nav-item-button header__nav-item-button_dark">
+                <span class="header__nav-item-name"></span>
+                <i class="header__nav-item-button-icon header__nav-item-button-icon_dark"></i>
+              </button>
+            </li>
+          </ul>
+          <label class="header__nav-switcher-label header__nav-switcher-label_close" for="header-nav-switcher"></label>
+        </nav>
+      </div>
+    </div>
+  </template>
+
+  <template id="saved-results">
+    <div class="saved-results__items"></div>
+    <button class="button button_white show-me-more show-me-more_hidden">Показать еще</button>
+  </template>
+
+  <template id="header-saved-detail-tag">
+    <span class="header-saved__detail-tag"></span>
+  </template>
+
+  <template id="news-card">
+    <article class="news-card">
+      <img class="news-card__img"
+           src=""
+           alt=""/>
+      <div class="news-card__action-container"></div>
+      <div class="news-card__content">
+        <h5 class="news-card__date"></h5>
+        <h3 class="news-card__title"></h3>
+        <p class="news-card__text"></p>
+      </div>
+      <h4 class="news-card__source"></h4>
+    </article>
+  </template>
+
+  <template id="news-card-base-action">
+    <a href="" target="_blank" class="news-card__link"></a>
+    <div class="news-card__bookmark">
+      <div class="news-card__bookmark-icon news-card__bookmark-icon_unmarked"></div>
+      <div class="news-card__auth-tooltip">
+        <p class="news-card__auth-tooltip-message">Войдите, чтобы сохранять статьи</p>
+      </div>
+    </div>
+  </template>
+  <template id="news-card-like-action">
+    <a href="" target="_blank" class="news-card__link"></a>
+    <div class="news-card__bookmark">
+      <div class="news-card__bookmark-icon news-card__bookmark-icon_unmarked news-card__action"></div>
+    </div>
+  </template>
+  <template id="news-card-unlike-action">
+    <a href="" target="_blank" class="news-card__link"></a>
+    <div class="news-card__bookmark">
+      <div class="news-card__bookmark-icon news-card__bookmark-icon_marked news-card__action"></div>
+    </div>
+  </template>
+  <template id="news-card-saved-action">
+    <a href="" target="_blank" class="news-card__link"></a>
+    <span class="news-card__tag">Природа</span>
+    <span class="news-card__trash news-card__action"></span>
+  </template>
+</div>
+<script type="module" src="<%= htmlWebpackPlugin.files.chunks.saved.entry %>"></script>
+</body>
+</html>

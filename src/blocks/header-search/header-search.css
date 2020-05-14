@@ -1,0 +1,28 @@
+@import url(./__title/header-search__title.css);
+@import url(./__subtitle/header-search__subtitle.css);
+@import url(./__form/header-search__form.css);
+@import url(./__form-group/header-search__form-group.css);
+@import url(./__input/header-search__input.css);
+@import url(./__button/header-search__button.css);
+@import url(./__input-error/header-search__input-error.css);
+
+.header-search {
+  margin: 80px auto 80px auto;
+
+  width: 100%;
+  max-width: 608px;
+}
+
+@media screen and (max-width: 768px) {
+  .header-search {
+    margin: 38px auto 48px auto;
+    max-width: 448px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .header-search {
+    margin: 30px auto 32px auto;
+    max-width: 288px;
+  }
+}

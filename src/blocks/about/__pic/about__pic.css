@@ -1,0 +1,19 @@
+.about__pic {
+  display: block;
+  border-radius: 50%;
+
+  width: 464px;
+  height: auto;
+}
+
+@media screen and (max-width: 900px) {
+  .about__pic {
+    width: 232px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .about__pic {
+    width: 272px;
+  }
+}

@@ -1,0 +1,29 @@
+.popup__form-input {
+  width: 100%;
+  padding: 8px 0 7px 0;
+
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000;
+
+  outline: none;
+
+  transition: border-bottom-color .1s ease-in;
+}
+
+.popup__form-input:focus {
+  border-bottom-color: rgba(0, 0, 0, .4);
+}
+
+.popup__form-input:disabled {
+  box-shadow: none;
+  background: #e6e8eb;
+  color: #b6bcbf;
+  cursor: not-allowed;
+}

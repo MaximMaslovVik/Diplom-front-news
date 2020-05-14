@@ -1,0 +1,21 @@
+.favorites__key-words {
+  font-family: 'Roboto' 'Verdana';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1A1B22;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .favorites__key-words {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .favorites__key-words {
+    font-size: 14px;
+  }
+}

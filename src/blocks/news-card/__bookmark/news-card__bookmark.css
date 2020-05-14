@@ -1,0 +1,23 @@
+.news-card__bookmark {
+  position: absolute;
+  display: flex;
+
+  top: 24px;
+  right: 24px;
+
+  z-index: 99;
+}
+
+@media screen and (max-width: 900px) {
+  .news-card__bookmark {
+    top: 8px;
+    right: 8px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .news-card__bookmark {
+    top: 16px;
+    right: 16px;
+  }
+}

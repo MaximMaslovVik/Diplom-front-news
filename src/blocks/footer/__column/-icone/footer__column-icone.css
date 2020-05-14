@@ -1,0 +1,6 @@
+@import url('./_github/footer__column-icone_github.css');
+@import url('./_facebook/footer__column-icone_facebook.css');
+
+.footer__column-icone {
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,6 @@
+.header__nav-item-button-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  background-image: url(../../../images/logout-icon.svg);
+}

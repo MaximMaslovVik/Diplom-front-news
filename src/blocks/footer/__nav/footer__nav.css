@@ -1,0 +1,21 @@
+.footer__nav {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #1A1B22;
+}
+
+@media screen and (max-width: 675px) {
+  .footer__nav {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .footer__nav {
+    margin-bottom: 40px;
+  }
+}
