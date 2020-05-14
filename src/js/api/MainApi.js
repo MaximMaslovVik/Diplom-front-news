@@ -6,11 +6,9 @@ export default class MainApi {
   signup({ email, password, name }) {
     return fetch(this._routes.signup, {
       method: 'POST',
-<<<<<<< HEAD
-     credentials: 'include',
-=======
+
       credentials: 'include',
->>>>>>> 043c8a1a48ed0323ac97eb9a1a92c72d539fb3bc
+
       headers: {
         'Content-Type': 'application/json',
       },
@@ -26,11 +24,9 @@ export default class MainApi {
   signin({ email, password }) {
     return fetch(this._routes.signin, {
       method: 'POST',
-<<<<<<< HEAD
+
    credentials: 'include',
-=======
-      credentials: 'include',
->>>>>>> 043c8a1a48ed0323ac97eb9a1a92c72d539fb3bc
+
       headers: {
         'Content-Type': 'application/json',
       },
@@ -67,11 +63,9 @@ export default class MainApi {
   getArticles() {
     return fetch(this._routes.getArticles, {
       method: 'GET',
-<<<<<<< HEAD
+
      credentials: 'include',
-=======
-      credentials: 'include',
->>>>>>> 043c8a1a48ed0323ac97eb9a1a92c72d539fb3bc
+
     })
       .then(res => res.json())
       .catch(err => console.log(err));
@@ -90,11 +84,9 @@ export default class MainApi {
 
     return fetch(this._routes.createArticle, {
       method: 'POST',
-<<<<<<< HEAD
+
     credentials: 'include',
-=======
-      credentials: 'include',
->>>>>>> 043c8a1a48ed0323ac97eb9a1a92c72d539fb3bc
+
       headers: {
         'Content-Type': 'application/json',
       },
@@ -115,11 +107,9 @@ export default class MainApi {
   removeArticle(articleId) {
     return fetch(`${this._routes.deleteArticle}/${articleId}`, {
       method: 'DELETE',
-<<<<<<< HEAD
+
     credentials: 'include',
-=======
-      credentials: 'include',
->>>>>>> 043c8a1a48ed0323ac97eb9a1a92c72d539fb3bc
+
     })
       .then(res => res.json())
       .catch(err => console.log(err));
