@@ -1,0 +1,34 @@
+@keyframes errors {
+  0% {
+    margin-top: -5px;
+    opacity: .1;
+  }
+  100% {
+    margin-top: 10px;
+    opacity: 1;
+  }
+}
+
+.popup__form-error {
+  display: none;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #f00;
+
+  animation: errors .1s ease-in-out;
+}
+
+.popup__form-input:invalid:not(:placeholder-shown) + .popup__form-error {
+  display: block;
+}
+
+.popup__form-error_showed {
+  display: block;
+}

@@ -1,0 +1,33 @@
+.result-card__description-about {
+  font-family: 'Roboto', 'Verdana';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1A1B22;
+  margin: 0;
+  max-height: 88px;
+  overflow: hidden;
+}
+
+@media (max-width: 1309px) {
+  .result-card__description-about {
+    max-height: 130px;
+    overflow: hidden;;
+  }
+}
+
+@media (max-width: 1024px) {
+  .result-card__description-about {
+    max-height: 88px;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 768px) {
+  .result-card__description-about {
+    max-height: 88px;
+    overflow: hidden;
+    margin-bottom: 8px;
+  }
+}

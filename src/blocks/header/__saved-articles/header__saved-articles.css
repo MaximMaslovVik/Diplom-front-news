@@ -8,7 +8,7 @@
     line-height: 56px;
     text-decoration: none;
     cursor: url(../../../images/lapka.png), pointer;
-   /* display: none;*/
+    display: none;
 
     color: #fff;
   }
@@ -24,7 +24,7 @@
     font-size: 16px;
     line-height: 24px;
     text-decoration: none;
-    /*display: none;*/
+    display: none;
     cursor: url(../../../images/lapka.png), pointer;
 
     color: #b6bcbf;
@@ -43,7 +43,7 @@
     font-size: 18px;
     line-height: 24px;
     text-decoration: none;
-    /*display: none;*/
+    display: none;
     cursor: url(../../../images/lapka.png), pointer;
 
     color: #b6bcbf;

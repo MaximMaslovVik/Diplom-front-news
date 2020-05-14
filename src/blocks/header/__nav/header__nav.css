@@ -1,0 +1,22 @@
+@media screen and (max-width: 767px) {
+  .header__nav {
+    position: fixed;
+
+    width: 100%;
+
+    right: 0;
+    top: -100%;
+
+    background: #1a1b22;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+
+    transition: all .5s ease-out;
+
+    z-index: 999;
+  }
+
+  .header__nav-switcher:checked ~ .header__nav {
+    top: 0;
+  }
+}

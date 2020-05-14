@@ -1,0 +1,33 @@
+.button_blue {
+  background: #2f71e5;
+  box-shadow: 0 5px 15px rgba(14, 26, 57, 0.2);
+  border: none;
+
+  color: #fff;
+
+  cursor: pointer;
+}
+
+.button_blue:hover {
+  background: #347eff;
+}
+
+.button_blue:active {
+  background: #2a65cc;
+}
+
+.button_blue:focus {
+  background: #2a65cc;
+}
+
+.button_blue:disabled:hover {
+  background: #e6e8eb;
+}
+
+.button_blue:disabled:active {
+  background: #e6e8eb;
+}
+
+.button_blue:disabled:focus {
+  background: #e6e8eb;
+}

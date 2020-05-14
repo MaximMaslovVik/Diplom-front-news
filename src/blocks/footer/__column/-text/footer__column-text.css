@@ -1,0 +1,15 @@
+@import url('./_header/footer__column-text_header.css');
+@import url('./_link/footer__column-text_link.css');
+
+.footer__column-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #1A1B22;
+  font-weight: 500;
+  margin: 0px;
+  text-decoration: none;
+}

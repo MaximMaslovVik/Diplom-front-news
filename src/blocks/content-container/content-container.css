@@ -1,0 +1,23 @@
+.content-container {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 104px 0 104px;
+
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .content-container {
+    padding: 0 40px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .content-container {
+    padding: 0 16px;
+  }
+}

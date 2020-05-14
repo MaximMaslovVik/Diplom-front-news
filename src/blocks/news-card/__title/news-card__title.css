@@ -1,0 +1,32 @@
+.news-card__title {
+  max-height: 90px;
+  margin: 12px 0 0 0;
+  padding: 0;
+
+  font-family: 'Roboto Slab', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 30px;
+  color: #1a1b22;
+
+  overflow: hidden;
+}
+
+@media screen and (max-width: 900px) {
+  .news-card__title {
+    max-height: 72px;
+
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .news-card__title {
+    max-height: 78px;
+
+    font-size: 22px;
+    line-height: 26px;
+  }
+}

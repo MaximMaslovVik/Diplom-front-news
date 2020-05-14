@@ -1,0 +1,14 @@
+.search-results__no-results-title {
+  display: block;
+
+  margin: 24px auto 0 auto;
+  padding: 0;
+
+  font-family: 'Roboto Slab', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 30px;
+  text-align: center;
+  color: #1a1b22;
+}

@@ -1,0 +1,4 @@
+.result-card__button-content {
+  display: flex;
+  flex-direction: row;
+}

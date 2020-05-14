@@ -1,0 +1,13 @@
+.header__nav-item-button_dark {
+  border: 1px solid #1a1b22;
+
+  color: #1a1b22;
+}
+
+@media screen and (max-width: 767px) {
+  .header__nav-item-button_dark {
+    border: 1px solid #fff;
+
+    color: #fff;
+  }
+}

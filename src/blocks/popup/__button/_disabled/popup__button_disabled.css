@@ -1,0 +1,46 @@
+@media (max-width: 768px) {
+    .popup__button_disabled {
+      width: 288px;
+      height: 64px;
+      margin-top: 23px;
+      margin-left: 16px;
+      margin-right: 16px;
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      border: none;
+      cursor: pointer;
+
+      box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
+      border-radius: 100px;
+      background: #e6e8eb;
+      color: #b6bcbf;
+    }
+  }
+
+@media (min-width: 768px) {
+  .popup__button_disabled {
+    width: 358px;
+    height: 64px;
+    margin-top: 39px;
+    margin-left: 36px;
+    margin-right: 36px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+
+    border: none;
+    cursor: pointer;
+
+    box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
+    border-radius: 100px;
+    background: #e6e8eb;
+    color: #B6BCBF;
+  }
+}

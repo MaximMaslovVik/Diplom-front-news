@@ -1,0 +1,25 @@
+@import url(./__text/favorites__text.css);
+@import url(./__title/favorites__title.css);
+@import url(./__key-words/favorites__key-words.css);
+@import url(./__span/favorites__span.css);
+@import url(./__words/favorites__words.css);
+
+
+.favorites {
+  width: calc(100% - 208px);
+  margin: 40px auto 56px;
+}
+
+@media (max-width: 1024px) {
+  .favorites {
+    width: calc(100% - 144px);
+    margin: 32px auto 44px;
+  }
+}
+
+@media (max-width: 768px) {
+  .favorites {
+    width: calc(100% - 80px);
+    margin: 24px auto 32px;
+  }
+}

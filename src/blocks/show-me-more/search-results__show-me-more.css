@@ -1,0 +1,30 @@
+.show-me-more {
+  width: 288px;
+  height: 64px;
+
+  margin: 64px auto 0 auto;
+
+  border-radius: 80px;
+}
+
+.show-me-more_hidden {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .show-me-more {
+    width: 240px;
+    height: 56px;
+
+    margin: 32px auto 0 auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .show-me-more {
+    width: 288px;
+    height: 56px;
+
+    margin: 16px auto 0 auto;
+  }
+}

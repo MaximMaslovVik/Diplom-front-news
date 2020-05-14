@@ -1,0 +1,9 @@
+.button_transparent {
+  background: rgba(196, 196, 196, 0.01);
+
+  cursor: pointer;
+}
+
+.button_transparent:hover {
+  background: rgba(196, 196, 196, 0.2);
+}

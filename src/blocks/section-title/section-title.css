@@ -1,0 +1,15 @@
+.section-title {
+  font-family: 'Roboto Slab', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 46px;
+  color: #1a1b22;
+}
+
+@media screen and (max-width: 900px) {
+  .section-title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}

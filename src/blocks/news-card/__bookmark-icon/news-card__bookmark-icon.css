@@ -1,0 +1,14 @@
+@import url(./_unmarked/news-card__bookmark-icon_unmarked.css);
+@import url(./_marked/news-card__bookmark-icon_marked.css);
+
+.news-card__bookmark-icon {
+  width: 40px;
+  height: 40px;
+
+  box-shadow: 0 10px 22px rgba(59, 74, 116, 0.1);
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  transition: background-image .25s ease-in;
+}

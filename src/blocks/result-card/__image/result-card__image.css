@@ -1,0 +1,31 @@
+.result-card__image {
+  height: 272px;
+  background-size: cover;
+  background-position: 50%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+@media (max-width: 1024px) {
+  .result-card__image {
+    height: 211px;
+  }
+}
+
+@media (max-width: 768px) {
+  .result-card__image {
+    height: 150px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .result-card__image {
+    min-height: 196px;
+  }
+}

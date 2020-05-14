@@ -1,0 +1,7 @@
+.news-card__bookmark-icon_marked {
+  background: #fff url(../../../../images/bookmark-icon-marked.svg) center center no-repeat;
+}
+
+.news-card__bookmark-icon_marked:hover {
+  background-image: url(../../../../images/bookmark-icon-marked.svg);
+}

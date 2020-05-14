@@ -1,0 +1,45 @@
+.result-card__description-title {
+  font-family: 'Roboto Slab', 'Verdana';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 30px;
+  color: #1A1B22;
+  margin: 12px 0px 16px;
+  max-height: 88px;
+  overflow: hidden;
+}
+
+@media (max-width: 1309px) {
+  .result-card__description-title {
+    max-height: 60px;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 1024px) {
+  .result-card__description-title {
+    font-size: 24px;
+    line-height: 28px;
+    margin: 12px 0px 13px;
+    max-height: 84px;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 768px) {
+  .result-card__description-title {
+    font-size: 22px;
+    line-height: 24px;
+    margin: 12px 0px 10px;
+    max-height: 72px;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 767px) {
+  .result-card__description-title {
+    max-height: 48px;
+    overflow: hidden;
+  }
+}

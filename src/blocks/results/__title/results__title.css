@@ -1,50 +1,52 @@
-@media (max-width: 767px) {
+.results__title {
+  font-family: 'Roboto Slab', 'Verdana';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 46px;
+  color: #1A1B22;
+  width: calc(100% - 208px);
+  margin: 0px auto 64px;
+  padding-top: 80px;
+}
+
+@media (max-width: 1309px) {
   .results__title {
-    width: 288px;
-    margin-left: 16px;
-    padding-top: 32px;
-    margin-top: 0;
-
-    font-family: Roboto Slab, arial, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 34px;
-
-    color: #1a1b22;
+    font-size: 45px;
+    line-height: 40px;
+    width: calc(100% - 265px);
+    margin: 0px auto 48px;
+    padding-top: 60px;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (max-width: 1128px) {
   .results__title {
-    width: 336px;
-    margin-left: 40px;
+    font-size: 45px;
+    line-height: 40px;
+    width: calc(100% - 210px);
+    margin: 0px auto 48px;
+    padding-top: 60px;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .results__title {
+    font-size: 45px;
+    line-height: 40px;
+    width: calc(100% - 144px);
+    margin: 0px auto 48px;
+    padding-top: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .results__title {
+    font-size: 30px;
+    line-height: 34px;
+    width: calc(100% - 80px);
+    margin: 0px auto 32px;
     padding-top: 40px;
-    margin-top: 0;
-
-    font-family: Roboto Slab, arial, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 34px;
-
-    color: #1a1b22;
-  }
-}
-
-@media (min-width: 1024px) {
-  .results__title {
-    width: 15em;
-    margin-left: 104px;
-    padding-top: 80px;
-    margin-top: 0;
-
-    font-family: Roboto Slab, arial, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 40px;
-    line-height: 46px;
-
-    color: #1a1b22;
   }
 }

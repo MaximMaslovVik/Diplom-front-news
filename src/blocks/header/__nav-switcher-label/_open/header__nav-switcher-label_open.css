@@ -1,0 +1,18 @@
+@media screen and (max-width: 767px) {
+  .header__nav-switcher-label_open {
+    display: block;
+    position: absolute;
+
+    width: 24px;
+    height: 24px;
+
+    top: 16px;
+    right: 16px;
+
+    background: url("../../../../images/open-menu.svg");
+  }
+
+  .header__nav-switcher-label_dark.header__nav-switcher-label_open {
+    background: url("../../../../images/open-menu-dark.svg");
+  }
+}
