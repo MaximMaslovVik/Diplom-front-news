@@ -81,7 +81,11 @@ const SUCCESS_REGISTRATION_POPUP = {
   template: document.querySelector('#popup-success-registration'),
 };
 
+<<<<<<< HEAD
 const mainApiUrl = 'http://LOCALHOST:3000';
+=======
+const mainApiUrl = 'https://api.diplom-max.ml';
+>>>>>>> 043c8a1a48ed0323ac97eb9a1a92c72d539fb3bc
 const MAIN_API_ROUTES = {
   signup: `${mainApiUrl}/signup`,
   signin: `${mainApiUrl}/signin`,
